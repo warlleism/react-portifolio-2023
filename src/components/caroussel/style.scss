@@ -1,0 +1,141 @@
+.container-carousel {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    min-height: 340px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #09071A;
+    font-family: 'Roboto', sans-serif;
+
+    .container-title-carousel {
+        width: 85%;
+        display: flex;
+        margin: 100px auto;
+        align-items: center;
+        justify-content: space-between;
+
+        .buttom-all-projects {
+            width: 120px;
+            height: 50px;
+            display: flex;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            transition: .5s ease-in-out;
+            border: solid 2px #9602D3;
+        }
+
+        .buttom-all-projects:hover {
+            color: #09071A;
+            background-color: #9602D3;
+            border: solid 2px #09071A;
+            ;
+        }
+
+        .container-title-text {
+            .titulo-txt {
+                letter-spacing: 4px;
+                font-size: 1.9rem;
+                font-weight: 200;
+                color: rgba(255, 255, 255, 0.87);
+            }
+
+            div:nth-child(2) {
+                height: 2px;
+                width: 100%;
+                position: relative;
+                margin-top: 10px;
+                background-color: #9602D3;
+            }
+
+            div:nth-child(2)::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 100%;
+                background-color: #09071A;
+                ;
+                right: 20px;
+            }
+
+            div:nth-child(2)::before {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 100%;
+                background-color: #09071A;
+                ;
+                right: 40px;
+            }
+        }
+
+    }
+
+    .carousel {
+        cursor: grab;
+        width: 85%;
+        overflow: hidden;
+
+        .inner {
+            display: flex;
+
+            .item {
+                display: flex;
+                color: black;
+                min-width: 620px;
+                min-height: 580px;
+                margin-left: 30px;
+                position: relative;
+                margin-bottom: 100px;
+                flex-direction: column;
+                align-items: flex-start;
+                transition: .2s ease-in-out;
+
+                .img-content {
+                    top: 0;
+                    width: 100%;
+                    height: 500px;
+                    object-fit: fill;
+                    pointer-events: none;
+                    background-size: cover;
+                    background-position: center;
+                    transition: .2s ease-in-out;
+                    background-repeat: no-repeat;
+                }
+
+                .container-nome-projeto {
+                    width: 100%;
+                    display: flex;
+                    margin: 10px 0;
+                    color: #9602D3;
+                    font-size: 1.5rem;
+                    transition: .5s ease-in-out;
+                }
+
+                .container-nome-tecno {
+                    width: 100%;
+                    display: flex;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    transition: .5s ease-in-out;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:322px) {
+
+    .item {
+        min-width: 220px !important;
+        min-height: 280px !important;
+    }
+}

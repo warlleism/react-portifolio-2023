@@ -25,7 +25,7 @@ const Header = () => {
                 <div className="nav-bar">
                     <a href="#">Início</a>
                     <a href="#">Sobre</a>
-                    <a href="#">Projetos</a>
+                    <a href="#projetos">Projetos</a>
                     <a href="#skills">Tecnologias</a>
                 </div>
                 <div className="buttom">

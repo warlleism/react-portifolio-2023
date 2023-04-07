@@ -1,0 +1,107 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  .skills {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+      flex-direction: column;
+      background-color: #09071A;
+
+      .title-skills {
+          margin: 100px 0 130px 0;
+
+          div:nth-child(1) {
+              color: #8303b9;
+              font-weight: 100;
+              font-size: 1.5rem;
+              text-align: center;
+          }
+
+          div:nth-child(2) {
+              color: #B400FF;
+              font-size: 2.6rem;
+              margin-bottom: 10px;
+          }
+
+          div:nth-child(3) {
+              display: flex;
+              justify-content: space-between;
+
+              div {
+                  height: 3px;
+                  background-color: #8303b9;
+              }
+
+              div:nth-child(1) {
+                  width: 80%;
+              }
+
+              div:nth-child(2) {
+                  width: 10%;
+              }
+
+              div:nth-child(3) {
+                  width: 5%;
+              }
+          }
+      }
+
+      .container-cards {
+          width: 80%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .card-skills {
+              width: 390px;
+              display: flex;
+              padding: 20px;
+              cursor: pointer;
+              margin-left: 100px;
+              border-radius: 10px;
+              margin-bottom: 80px;
+              flex-direction: column;
+              box-sizing: border-box;
+              align-items: flex-start;
+              transition: .8s ease-in-out;
+              transform: translateY(300%);
+              background-color: #ad00f715;
+
+              .container-img {
+                  width: 70px;
+                  height: 70px;
+                  display: flex;
+                  align-items: center;
+                  border-radius: 100%;
+                  justify-content: center;
+                  background-color: #fff;
+                  transition: .8s ease-in-out;
+
+                  img {
+                      width: 50px;
+                  }
+              }
+
+              div:nth-child(2) {
+                  font-size: 2rem;
+                  color: #9602D3;
+                  margin: 10px 0;
+              }
+
+              div:nth-child(3) {
+                  color: #ffffffc7;
+                  letter-spacing: 2px;
+              }
+          }
+
+          .card-skills:hover {
+              background-color: #ad00f783;
+
+              .container-img {
+                  background-color: #09071A;
+              }
+          }
+      }
+
+  }
