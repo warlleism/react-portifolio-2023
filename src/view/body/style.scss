@@ -3,6 +3,7 @@
   .skills {
       width: 100%;
       display: flex;
+      overflow: hidden;
       align-items: center;
       flex-direction: column;
       background-color: #09071A;
@@ -13,8 +14,8 @@
           div:nth-child(1) {
               color: #8303b9;
               font-weight: 100;
-              text-align: center;
               font-size: 1.5rem;
+              text-align: center;
           }
 
           div:nth-child(2) {
@@ -56,15 +57,16 @@
               width: 390px;
               display: flex;
               padding: 20px;
+              cursor: pointer;
               margin-left: 100px;
               border-radius: 10px;
               margin-bottom: 80px;
               flex-direction: column;
               box-sizing: border-box;
               align-items: flex-start;
-              transition: .5s ease-in-out;
+              transition: .8s ease-in-out;
+              transform: translateY(300%);
               background-color: #ad00f715;
-              cursor: pointer;
 
               .container-img {
                   width: 70px;
@@ -74,6 +76,7 @@
                   border-radius: 100%;
                   justify-content: center;
                   background-color: #fff;
+                  transition: .8s ease-in-out;
 
                   img {
                       width: 50px;
@@ -94,6 +97,10 @@
 
           .card-skills:hover {
               background-color: #ad00f783;
+
+              .container-img {
+                  background-color: #09071A;
+              }
           }
       }
 

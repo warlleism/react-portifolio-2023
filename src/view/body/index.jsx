@@ -4,23 +4,30 @@ import './style.scss'
 
 const Skills = () => {
 
-    // function centerItens() {
-    //     const item = document.querySelectorAll('#transform-item')
-    //     item.forEach((item, index) => {
-    //         setTimeout(() => {
-    //             item.style.transform = 'translateX(0%)'
-    //         }, (index + 1) * 200)
-    //     })
+    function centerItens() {
+        const item = document.querySelectorAll('#cards')
+        item.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.transform = 'translateY(0%)'
+                item.style.transition = '1s ease-in-out';
+            }, (index + 1) * 200)
+            setTimeout(() => {
+                item.style.transition = '.8s ease-in-out';
+            }, (index + 1) * 200)
+        })
 
-    // }
+    }
 
-    // useEffect(() => {
-    //     centerItens()
-    // }, [])
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                centerItens()
+            }
+        })
+    }, [])
 
     return (
         <div className="skills" id="skills">
-            {console.log(DataSkills)}
             <div className="title-skills">
                 <div>Technologies</div>
                 <div>Tecnologias</div>
@@ -35,7 +42,7 @@ const Skills = () => {
                 {
                     DataSkills.map((e) => {
                         return (
-                            <div className="card-skills">
+                            <div className="card-skills" id="cards">
                                 <div className="container-img">
                                     <img src={e.img} alt="" />
                                 </div>
