@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buttom {
+    width: 120px;
+    margin: 30px 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 14px 0px;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: #9602D3;
+}
