@@ -23,10 +23,10 @@ const Header = () => {
         <div className="header" id="header">
             <div className="nav-bar-conteiner">
                 <div className="nav-bar">
-                    <a href="">Início</a>
-                    <a href="">Sobre</a>
-                    <a href="">Projetos</a>
-                    <a href="">Contato</a>
+                    <a href="#">Início</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Projetos</a>
+                    <a href="#skills">Tecnologias</a>
                 </div>
                 <div className="buttom">
                     Contato
@@ -53,9 +53,9 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="scroll-buttom">
+            <a className="scroll-buttom" href="#skills">
                 <img className="icon" src={icon} alt="" />
-            </div>
+            </a>
         </div>
     )
 }
