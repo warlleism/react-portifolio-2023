@@ -14,15 +14,8 @@ const Carousel = () => {
         }
     }, [])
 
-    function hiddenArrow() {
-        const arrow = document.getElementById('Arrow');
-        const style = arrow.style;
-        style.opacity = '0';
-    }
-
     return (
         <div className='container-carousel'>
-
             <div className='container-title-carousel'>
                 <div className='container-title-text'>
                     <div className='titulo-txt'>Ultimos <strong style={{ color: "#9602D3" }}>Projetos</strong></div>
@@ -33,18 +26,13 @@ const Carousel = () => {
                 </div>
             </div>
 
-            <motion.div
-                ref={carousel}
-                className='carousel'
-                whileTap={{ cursor: "grabbing" }}
-            >
+            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
                 <motion.div
                     className='inner'
                     drag="x"
                     animate={{ x: 0 }}
                     initial={{ x: 100 }}
                     dragConstraints={{ right: 0, left: -width }}
-                    onTouchStart={() => hiddenArrow()}
                 >
                     {
                         Projetos?.map((itens) => {
@@ -62,7 +50,6 @@ const Carousel = () => {
                             )
                         })
                     }
-
                 </motion.div>
             </motion.div>
         </div >
