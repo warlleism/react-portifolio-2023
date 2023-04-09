@@ -29,7 +29,7 @@ const Header = () => {
                     <a href="#skills">Tecnologias</a>
                 </div>
                 <div className="buttom">
-                    Contato
+                    Currículo
                 </div>
             </div>
             <div className="container-header-content">
