@@ -1,0 +1,154 @@
+.Allprojects {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(351deg, rgba(68, 0, 255, 1) 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
+
+
+    .container-cards-projetos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card-project {
+            width: 80%;
+            display: flex;
+            cursor: pointer;
+            min-height: 800px;
+            position: relative;
+            margin-bottom: 40px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .loading {
+                position: absolute;
+                bottom: 0;
+                z-index: 9999;
+                width: 0%;
+                height: 10px;
+            }
+
+
+            .second-img {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            @mixin keyframe {
+
+                @keyframes loading {
+                    0% {
+                        width: 0%;
+                    }
+
+                    50% {
+                        width: 100%;
+                    }
+
+                    100% {
+                        width: 0%;
+                    }
+                }
+
+                @keyframes img {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .img {
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                filter: grayscale(100%) brightness(40%);
+                background-size: cover;
+                background-position: center;
+                transition: .5s ease-in-out;
+                background-repeat: no-repeat;
+            }
+
+            .container-info-tecno {
+                width: 90%;
+                height: 90%;
+                z-index: 2;
+                display: flex;
+                border-radius: 6px;
+                align-items: center;
+                pointer-events: none;
+                flex-direction: column;
+                justify-content: center;
+                transition: .5s ease-in-out;
+
+                .info-child {
+                    font-size: 4rem;
+                    font-weight: 900;
+                    position: relative;
+                    letter-spacing: 15px;
+                    text-transform: uppercase;
+                    transition: .5s ease-in-out;
+                }
+
+                .container-tecno-child::after,
+                .container-nome-child::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    left: 0;
+                    background-color: #ffffff4b;
+                }
+
+                .container-nome-child::after {
+                    top: -10px;
+                    background-color: #ffffffb2;
+
+                }
+
+                .container-tecno-child::after {
+                    bottom: -10px;
+                }
+
+                .container-tecno-child {
+                    font-size: 3rem;
+
+                }
+            }
+
+            .first-img:hover {
+                filter: grayscale(0%);
+
+                ~.loading {
+                    @include keyframe;
+                    animation: loading infinite 10s ease-in-out both;
+                }
+
+                ~.second-img {
+                    @include keyframe;
+                    filter: grayscale(0%);
+                    animation: img infinite 10s step-end both;
+                }
+
+                ~.container-info-tecno {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+
+                    .info-child {
+                        font-size: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}

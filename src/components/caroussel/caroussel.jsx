@@ -1,7 +1,9 @@
-import './style.scss'
 import Projetos from '../../data-projetos/projetos';
-import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+import './style.scss'
 
 const Carousel = () => {
 
@@ -21,9 +23,9 @@ const Carousel = () => {
                     <div className='titulo-txt'>Ultimos <strong style={{ color: "#9602D3" }}>Projetos</strong></div>
                     <div></div>
                 </div>
-                <div className='buttom-all-projects'>
+                <Link to={'/projetos'} className='buttom-all-projects'>
                     Ver Todos
-                </div>
+                </Link>
             </div>
 
             <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>

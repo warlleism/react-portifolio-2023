@@ -1,5 +1,4 @@
 import Carousel from '../../components/caroussel/caroussel'
-import './style.scss'
 
 const Projects = () => {
     return (

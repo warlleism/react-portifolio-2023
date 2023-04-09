@@ -1,14 +1,11 @@
 import './style.css'
-import Skills from './view/Skills'
-import Header from './view/header'
-import Projects from './view/projects'
+import Rotas from './routes/route'
+
 function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Skills />
-      <Projects />
+      <Rotas />
     </div>
   )
 }
