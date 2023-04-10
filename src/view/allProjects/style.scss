@@ -176,3 +176,20 @@
         }
     }
 }
+
+@media screen and (max-width: 912px) {
+    .Allprojects {
+        width: 100%;
+
+        .title-projetos {
+            top: 160px;
+        }
+
+        .container-cards-projetos {
+            .card-project {
+                width: 90%;
+                min-height: 200px;
+            }
+        }
+    }
+}

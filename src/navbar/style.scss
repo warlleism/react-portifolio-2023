@@ -1,7 +1,7 @@
 .nav-bar-conteiner-default {
     top: 0;
+    z-index: 9;
     width: 100%;
-    z-index: 2;
     display: flex;
     height: 100px;
     position: fixed;
@@ -10,9 +10,9 @@
     box-sizing: border-box;
     transition: .5s ease-in-out;
     background-color: #26014e;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     .nav-bar-default {
         display: flex;
@@ -42,6 +42,22 @@
         a:hover::after {
             content: '';
             width: 100%;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .nav-bar-conteiner-default {
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+        justify-content: space-around;
+
+        .nav-bar-default {
+            width: 100px;
         }
 
 

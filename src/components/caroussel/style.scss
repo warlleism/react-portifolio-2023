@@ -144,10 +144,33 @@
     }
 }
 
-@media screen and (max-width:322px) {
+@media screen and (max-width: 912px) {
+    .container-carousel {
+        .carousel {
+            .inner {
+                .item {
+                    min-width: 100%;
+                    min-height: 100%;
+                    margin-right: 30px;
 
-    .item {
-        min-width: 220px !important;
-        min-height: 280px !important;
+                    .filter {
+                        display: none;
+                    }
+
+                    .container-nome-projeto {
+                        margin: 0;
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                    }
+
+                    .container-nome-tecno {
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
     }
 }

@@ -20,14 +20,38 @@ const Header = () => {
         centerItens()
     }, [])
 
+    function CallNavBar(value) {
+        const menu = document.getElementById('menu')
+        menu.style.transform = `translateX(${value}%)`
+    }
+
     return (
         <div className="header" id="header">
+
+            <span className="material-symbols-outlined menu" translate="no" onClick={() => CallNavBar(0)}>
+                menu
+            </span>
+
             <div className="nav-bar-conteiner">
                 <div className="nav-bar">
                     <a href="#">Início</a>
                     <a href="#">Sobre</a>
                     <a href="#projetos">Projetos</a>
                     <a href="#skills">Tecnologias</a>
+                </div>
+                <a href={curriculo} className="buttom">
+                    Currículo
+                </a>
+            </div>
+            <div className="nav-bar-conteiner-mobile" id="menu">
+                <span className="material-symbols-outlined close" translate="no" onClick={() => CallNavBar(120)}>
+                    close
+                </span>
+                <div className="nav-bar">
+                    <a href="#" onClick={() => CallNavBar(120)}>Início</a>
+                    <a href="#" onClick={() => CallNavBar(120)}>Sobre</a>
+                    <a href="#projetos" onClick={() => CallNavBar(120)}>Projetos</a>
+                    <a href="#skills" onClick={() => CallNavBar(120)}>Tecnologias</a>
                 </div>
                 <a href={curriculo} className="buttom">
                     Currículo

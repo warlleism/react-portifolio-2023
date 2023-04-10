@@ -12,6 +12,14 @@
       background: rgb(2, 0, 36);
       background: linear-gradient(351deg, rgba(68, 0, 255, 1) 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
 
+      .menu {
+          display: none;
+      }
+
+      .nav-bar-conteiner-mobile {
+          display: none;
+      }
+
       .nav-bar-conteiner {
           width: 80%;
           display: flex;
@@ -22,6 +30,8 @@
               display: flex;
               width: 500px;
               justify-content: space-between;
+
+
 
               a {
                   color: #fff;
@@ -194,4 +204,157 @@
           }
 
       }
+  }
+
+  @media screen and (max-width: 1254px) {
+      .header {
+          position: relative;
+
+          .container-header-content {
+              width: 100%;
+
+              .conteiner-blob {
+                  .blob {
+                      width: 400px;
+                      height: 400px;
+
+                      img {
+                          max-width: 300px;
+                      }
+                  }
+              }
+
+              .container-text-header {
+                  .container-text-content {
+                      .text {
+                          font-size: 4rem;
+                      }
+                  }
+              }
+          }
+
+      }
+
+  }
+
+  @media screen and (max-width: 988px) {
+      .header {
+          position: relative;
+
+          .container-header-content {
+              .container-text-header {
+                  .container-text-content {
+                      .how-i-do-text {
+                          width: 350px;
+                      }
+
+                  }
+              }
+          }
+
+      }
+
+
+  }
+
+  @media screen and (max-width: 912px) {
+      .header {
+          position: relative;
+
+          .menu {
+              top: 0;
+              z-index: 9;
+              right: 0px;
+              color: #fff;
+              display: block;
+              position: fixed;
+              font-size: 4rem;
+          }
+
+          .container-header-content {
+
+              .container-text-header {
+                  width: 100%;
+
+                  .container-text-content {
+                      width: 100%;
+
+                      .text {
+                          font-size: 4rem;
+                          width: 100%;
+                      }
+
+                      .how-i-do {
+                          text-align: center;
+                          margin: 30px auto;
+                      }
+
+                      .how-i-do-text {
+                          width: 100%;
+                          text-align: center;
+                      }
+
+                      .buttom {
+                          margin: 30px auto;
+                      }
+                  }
+              }
+
+              .conteiner-blob {
+                  display: none;
+              }
+          }
+
+          .nav-bar-conteiner {
+              display: none;
+          }
+
+          .nav-bar-conteiner-mobile {
+              top: 0;
+              right: 0;
+              z-index: 9;
+              width: 80%;
+              height: 100vh;
+              display: flex;
+              position: fixed;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              transform: translateX(120%);
+              background-color: #9602D3;
+              transition: .5s ease-in-out;
+
+              .close {
+                  display: block;
+                  position: absolute;
+                  top: 10px;
+                  right: 10px;
+                  font-size: 3rem;
+                  color: #fff;
+                  border-radius: 100%;
+                  background-color: #26003636;
+              }
+
+              .nav-bar {
+                  width: 100%;
+                  height: 40%;
+                  display: flex;
+                  margin-top: 30px;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                  a {
+                      width: 60%;
+                      padding: 0 30px;
+                      color: #fff;
+                      font-size: 1.5rem;
+                      margin-top: 20px;
+                      box-sizing: border-box;
+                  }
+
+              }
+          }
+      }
+
+
   }

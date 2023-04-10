@@ -1,9 +1,14 @@
 import './style.scss'
 import Projetos from '../../data-projetos-detalhar/projetos';
 import Navbar from './../../navbar/index';
+import { useEffect } from 'react';
 
 const AllProjects = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     return (
         <>
             <Navbar />
