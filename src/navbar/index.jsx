@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import curriculo from '../data-projetos/curriculo.pdf'
 import './style.scss'
 
 const Navbar = () => {
@@ -35,9 +36,9 @@ const Navbar = () => {
             <div className="nav-bar-default">
                 <Link to={'/'}>Início</Link>
             </div>
-            <div className="buttom">
+            <a href={curriculo} className="buttom">
                 Currículo
-            </div>
+            </a>
         </div>
     )
 }

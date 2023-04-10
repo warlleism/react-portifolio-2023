@@ -12,6 +12,10 @@ import img_11 from '../images/projetos/detalhar/last.png'
 import img_12 from '../images/projetos/detalhar/last2.png'
 import img_13 from '../images/projetos/detalhar/medical.png'
 import img_14 from '../images/projetos/detalhar/medical2.png'
+import img_15 from '../images/projetos/detalhar/flatout.png'
+import img_16 from '../images/projetos/detalhar/flatout2.png'
+import img_17 from '../images/projetos/detalhar/amazonia.png'
+import img_18 from '../images/projetos/detalhar/amazonia2.png'
 
 const Projetos = [
     {
@@ -26,16 +30,16 @@ const Projetos = [
         id: 2,
         img: img_3,
         img2: img_4,
-        nome: "Web Design",
-        tecno: 'ReactJs',
+        nome: "Front end app",
+        tecno: 'Reactjs',
         color: "#ff8d00"
     },
     {
         id: 3,
         img: img_5,
         img2: img_6,
-        nome: "Front end app",
-        tecno: 'ReactJs',
+        nome: "Web Design",
+        tecno: 'Figma',
         color: "#093739"
     },
     {
@@ -59,7 +63,7 @@ const Projetos = [
         img: img_11,
         img2: img_12,
         nome: "Front end app",
-        tecno: 'React Native',
+        tecno: 'Reactjs',
         color: "#383838"
     },
     {
@@ -67,8 +71,24 @@ const Projetos = [
         img: img_13,
         img2: img_14,
         nome: "Front end app",
-        tecno: 'React Native',
+        tecno: 'Reactjs',
         color: "#097954"
+    },
+    {
+        id: 7,
+        img: img_15,
+        img2: img_16,
+        nome: "Front end app",
+        tecno: 'Reactjs',
+        color: "#262626"
+    },
+    {
+        id: 8,
+        img: img_17,
+        img2: img_18,
+        nome: "Front end app",
+        tecno: 'Reactjs',
+        color: "green"
     },
 ]
 

@@ -1,11 +1,11 @@
 .container-carousel {
     width: 100%;
+    height: 700px;
     display: flex;
     overflow: hidden;
-    min-height: 340px;
     position: relative;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     background-color: #09071A;
     font-family: 'Roboto', sans-serif;
@@ -90,39 +90,49 @@
                 color: black;
                 min-width: 620px;
                 min-height: 580px;
-                margin-left: 30px;
                 position: relative;
+                overflow: hidden;
+                align-items: center;
                 margin-bottom: 100px;
                 flex-direction: column;
-                align-items: flex-start;
                 transition: .2s ease-in-out;
 
                 .img-content {
                     width: 100%;
-                    height: 500px;
+                    display: flex;
                     object-fit: fill;
-                    filter: saturate(0%);
-                    background-size: cover;
+                    min-height: 300px;
+                    align-items: center;
+                    justify-content: center;
+                    background-size: contain;
                     background-position: center;
-                    transition: .2s ease-in-out;
                     background-repeat: no-repeat;
+
+                    .filter {
+                        width: 91%;
+                        height: 100%;
+                        transition: .5s ease-in-out;
+                        background-color: #b300ff23;
+                    }
                 }
 
                 .img-content:hover {
-                    filter: saturate(100%);
+                    .filter {
+                        opacity: 0;
+                    }
                 }
 
                 .container-nome-projeto {
-                    width: 100%;
+                    width: 90%;
                     display: flex;
                     margin: 10px 0;
-                    color: #9602D3;
+                    color: #b300ff;
                     font-size: 1.5rem;
                     transition: .5s ease-in-out;
                 }
 
                 .container-nome-tecno {
-                    width: 100%;
+                    width: 90%;
                     display: flex;
                     color: #fff;
                     font-size: 1.2rem;

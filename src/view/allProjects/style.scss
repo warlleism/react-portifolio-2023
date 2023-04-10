@@ -1,34 +1,73 @@
 .Allprojects {
     width: 100%;
     height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background: linear-gradient(351deg, rgba(68, 0, 255, 1) 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
+
+    .title-projetos {
+        top: 12%;
+        font-size: 3rem;
+        color: #ce0aff;
+        font-weight: 100;
+        position: abolute;
+        padding: 0px 30px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+    .title-projetos::after {
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 5px;
+        content: '';
+        position: absolute;
+        background: #ce0aff;
+    }
+
+    .title-projetos::before {
+        top: 0;
+        left: 0;
+        width: 38%;
+        content: '';
+        height: 5px;
+        position: absolute;
+        background: #5c0074;
+    }
 
     .container-cards-projetos {
         display: flex;
         flex-wrap: wrap;
-        box-sizing: border-box;
+        border-radius: 20px;
         padding: 300px 0 0 0;
+        box-sizing: border-box;
         justify-content: space-evenly;
 
         .card-project {
-            width: 80%;
+            width: 600px;
             display: flex;
             cursor: pointer;
-            min-height: 800px;
+            overflow: hidden;
+            min-height: 350px;
             position: relative;
+            border-radius: 5px;
             margin-bottom: 40px;
             align-items: center;
             flex-direction: column;
             justify-content: center;
 
             .loading {
-                position: absolute;
-                bottom: 0;
-                z-index: 9999;
                 width: 0%;
+                bottom: 0;
                 height: 10px;
+                z-index: 9999;
+                border-radius: 10px;
+                position: absolute;
             }
-
 
             .second-img {
                 opacity: 0;
@@ -70,13 +109,12 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
                 position: absolute;
                 background-size: cover;
                 background-position: center;
                 transition: .5s ease-in-out;
                 background-repeat: no-repeat;
-                filter: grayscale(100%) brightness(40%);
+                filter: grayscale(100%) brightness(20%);
             }
 
             .container-info-tecno {
@@ -93,38 +131,18 @@
                 transition: .5s ease-in-out;
                 border: solid 4px #8209a0;
 
+                .container-nome-child {
+                    letter-spacing: 10px;
+                    font-weight: 800 !important;
+                }
+
                 .info-child {
-                    font-size: 4rem;
-                    font-weight: 900;
+                    font-size: 2.2rem;
+                    font-weight: 400;
                     position: relative;
-                    letter-spacing: 15px;
+                    text-align: center;
                     text-transform: uppercase;
                     transition: .5s ease-in-out;
-                }
-
-                .container-tecno-child::after,
-                .container-nome-child::after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 3px;
-                    left: 0;
-                    background-color: #6309799d;
-                }
-
-                .container-nome-child::after {
-                    top: -10px;
-                    background-color: #630979;
-
-                }
-
-                .container-tecno-child::after {
-                    bottom: -10px;
-                }
-
-                .container-tecno-child {
-                    font-size: 3rem;
-
                 }
             }
 
@@ -148,8 +166,10 @@
                     height: 0;
 
                     .info-child {
-                        font-size: 0;
+                        font-size: 0 !important;
+                        letter-spacing: 0;
                     }
+
                 }
             }
 

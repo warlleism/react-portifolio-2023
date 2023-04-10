@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import img from '../../images/astronauta.png'
 import icon from '../../images/mouse-icon.png'
+import curriculo from '../../data-projetos/curriculo.pdf'
 import './style.scss'
 
 const Header = () => {
@@ -28,9 +29,9 @@ const Header = () => {
                     <a href="#projetos">Projetos</a>
                     <a href="#skills">Tecnologias</a>
                 </div>
-                <div className="buttom">
+                <a href={curriculo} className="buttom">
                     Currículo
-                </div>
+                </a>
             </div>
             <div className="container-header-content">
                 <div className="container-text-header">

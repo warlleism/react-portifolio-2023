@@ -8,6 +8,7 @@ const AllProjects = () => {
         <>
             <Navbar />
             <div className='Allprojects'>
+                <div className='title-projetos'>Proj<strong>etos</strong></div>
                 <div className='container-cards-projetos'>
                     {
                         Projetos?.map((itens) => {

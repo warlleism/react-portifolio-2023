@@ -1,10 +1,12 @@
-import img1 from '../images/projetos/selecionarh.png'
-import img2 from '../images/projetos/spotfy.png'
-import img3 from '../images/projetos/stock.png'
-import img4 from '../images/projetos/insider.png'
-import img5 from '../images/projetos/nike.png'
-import img6 from '../images/projetos/tarefas.png'
-import img7 from '../images/projetos/card.png'
+import img1 from '../images/projetos/detalhar/spotfy.png'
+import img2 from '../images/projetos/detalhar/nike.png'
+import img3 from '../images/projetos/detalhar/rh.png'
+import img4 from '../images/projetos/detalhar/insider.png'
+import img5 from '../images/projetos/detalhar/stock.png'
+import img6 from '../images/projetos/detalhar/last.png'
+import img7 from '../images/projetos/detalhar/medical.png'
+import img8 from '../images/projetos/detalhar/mobile.png'
+import img9 from '../images/projetos/detalhar/flatout.png'
 
 const Projetos = [
     {
@@ -46,6 +48,18 @@ const Projetos = [
     {
         id: 7,
         img: img7,
+        nome: "Web Design",
+        tecno: 'Figma'
+    },
+    {
+        id:8,
+        img: img8,
+        nome: "Web Design",
+        tecno: 'Figma'
+    },
+    {
+        id:9,
+        img: img9,
         nome: "Web Design",
         tecno: 'Figma'
     },
