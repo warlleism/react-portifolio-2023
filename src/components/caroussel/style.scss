@@ -147,9 +147,9 @@
 @media screen and (max-width: 912px) {
     .container-carousel {
         .container-title-carousel {
+            margin: 0;
             flex-direction: column;
             align-items: flex-start;
-            margin: 0;
 
             .buttom-all-projects {
                 margin-top: 20px;

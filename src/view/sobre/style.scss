@@ -66,9 +66,9 @@ $color1: #7902b1;
 }
 
 body {
-    background: #08001d;
-    font-family: "Open Sans", sans-serif;
     color: #09071A;
+    background: #09071A;
+    font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -393,8 +393,8 @@ h2 {
                 }
 
                 .timeline__event__icon {
-                    border-radius: $bdrs $bdrs 0 0;
                     margin: 0;
+                    border-radius: $bdrs $bdrs 0 0;
                 }
             }
         }
@@ -417,17 +417,21 @@ h2 {
 
 @media (max-width: 412px) {
 
+    .titulo-sobre-mim {
+        margin: 0 0 100px 0 !important;
+    }
+
     .timeline {
         .timeline__event {
+            width: 90% !important;
             display: flex;
-            flex-direction: column;
-            width: 90%;
-            overflow: hidden;
             height: 300px;
+            overflow: hidden;
+            flex-direction: column;
             background-color: #7902b1;
 
             .timeline__event__content {
-                border-radius: 10px;
+                border-radius: 5px;
             }
 
         }

@@ -16,7 +16,7 @@ const Sobre = () => {
                     <div className="timeline__event__date">
                         05/06/2021
                     </div>
-                    <div className="timeline__event__content ">
+                    <div className="timeline__event__content">
                         <div className="timeline__event__title">
                             análise e desenvolvimento de sistemas (UVV)
                         </div>
