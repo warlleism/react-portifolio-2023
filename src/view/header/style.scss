@@ -10,7 +10,7 @@
       justify-content: center;
       transition: .5s ease-in-out;
       background: rgb(2, 0, 36);
-      background: linear-gradient(351deg, rgba(68, 0, 255, 1) 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
+      background: linear-gradient(351deg, #4400ff 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
 
       .menu {
           display: none;
@@ -30,8 +30,6 @@
               display: flex;
               width: 500px;
               justify-content: space-between;
-
-
 
               a {
                   color: #fff;
@@ -290,7 +288,8 @@
                       }
 
                       .how-i-do-text {
-                          width: 100%;
+                          width: 90%;
+                          margin: 0 auto;
                           text-align: center;
                       }
 
@@ -314,41 +313,38 @@
               right: 0;
               z-index: 9;
               width: 80%;
-              height: 100vh;
               display: flex;
+              height: 100vh;
               position: fixed;
+              align-items: self-start;
               flex-direction: column;
-              align-items: center;
-              justify-content: space-between;
               transform: translateX(120%);
               background-color: #9602D3;
               transition: .5s ease-in-out;
 
               .close {
-                  display: block;
-                  position: absolute;
                   top: 10px;
                   right: 10px;
-                  font-size: 3rem;
                   color: #fff;
-                  border-radius: 100%;
-                  background-color: #26003636;
+                  display: block;
+                  font-size: 3rem;
+                  position: absolute;
               }
+
 
               .nav-bar {
                   width: 100%;
-                  height: 40%;
+                  height: 50%;
                   display: flex;
-                  margin-top: 30px;
                   flex-direction: column;
                   justify-content: space-between;
 
                   a {
                       width: 60%;
-                      padding: 0 30px;
                       color: #fff;
-                      font-size: 1.5rem;
+                      padding: 0 30px;
                       margin-top: 20px;
+                      font-size: 1.5rem;
                       box-sizing: border-box;
                   }
 

@@ -35,7 +35,7 @@ const Header = () => {
             <div className="nav-bar-conteiner">
                 <div className="nav-bar">
                     <a href="#">Início</a>
-                    <a href="#">Sobre</a>
+                    <a href="#sobre">Sobre</a>
                     <a href="#projetos">Projetos</a>
                     <a href="#skills">Tecnologias</a>
                 </div>
@@ -49,13 +49,11 @@ const Header = () => {
                 </span>
                 <div className="nav-bar">
                     <a href="#" onClick={() => CallNavBar(120)}>Início</a>
-                    <a href="#" onClick={() => CallNavBar(120)}>Sobre</a>
+                    <a href="#sobre" onClick={() => CallNavBar(120)}>Sobre</a>
                     <a href="#projetos" onClick={() => CallNavBar(120)}>Projetos</a>
                     <a href="#skills" onClick={() => CallNavBar(120)}>Tecnologias</a>
+                    <a href={curriculo}>Currículo</a>
                 </div>
-                <a href={curriculo} className="buttom">
-                    Currículo
-                </a>
             </div>
             <div className="container-header-content">
                 <div className="container-text-header">
@@ -69,7 +67,7 @@ const Header = () => {
                         <div id="transform-item" className="how-i-do-text">
                             Sempre com foco no desenvolvimento ágil com boas práticas em busca de uma boa experiencia para o usuário
                         </div>
-                        <div id="transform-item" className="buttom">Sobre mim</div>
+                        <a href="#sobre" id="transform-item" className="buttom">Sobre mim</a>
                     </div>
                 </div>
                 <div className="conteiner-blob">
