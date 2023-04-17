@@ -8,7 +8,7 @@ const AllProjects = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-    
+
     return (
         <>
             <Navbar />
@@ -28,6 +28,7 @@ const AllProjects = () => {
                                     <div className='container-info-tecno'>
                                         <div className='container-nome-child info-child'>{itens.nome}</div>
                                         <div className='container-tecno-child info-child'>{itens.tecno}</div>
+                                        <div className='container-tecno-child info-child' style={{ textTransform: "lowercase", fontSize: '1.8rem', letterSpacing: -2 }}>{itens.text}</div>
                                     </div>
                                 </div>
 

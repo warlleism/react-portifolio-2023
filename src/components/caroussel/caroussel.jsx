@@ -20,7 +20,7 @@ const Carousel = () => {
         <div className='container-carousel'>
             <div className='container-title-carousel'>
                 <div className='container-title-text'>
-                    <div className='titulo-txt'>Ultimos <strong style={{ color: "#9602D3" }}>Projetos</strong></div>
+                    <div className='titulo-txt'>Últimos <strong style={{ color: "#9602D3" }}>Projetos</strong></div>
                     <div></div>
                 </div>
                 <Link to={'/projetos'} className='buttom-all-projects'>
