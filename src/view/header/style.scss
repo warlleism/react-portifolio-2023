@@ -9,8 +9,6 @@
       flex-direction: column;
       justify-content: center;
       transition: .5s ease-in-out;
-      background: rgb(2, 0, 36);
-      background: linear-gradient(351deg, #4400ff 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
 
       .menu {
           display: none;
@@ -47,7 +45,7 @@
                   bottom: -10px;
                   height: 2px;
                   position: absolute;
-                  background: #9602D3;
+                  background: #03d500;
                   transition: .5s ease-in-out;
               }
 
@@ -79,7 +77,7 @@
 
                   .how-i-do {
                       margin: 20px 0;
-                      color: #9602D3;
+                      color: #03d500;
                       font-size: 1.5rem;
                       position: relative;
                       transform: translateX(-300%);
@@ -133,16 +131,17 @@
                   }
 
               }
-
           }
 
           .conteiner-blob {
               width: 50%;
+              opacity: 0;
               height: 100%;
               display: flex;
               position: relative;
               align-items: center;
               justify-content: center;
+              transition: 1.5s ease-in-out;
 
               .blob {
                   width: 500px;
@@ -181,7 +180,7 @@
 
           .icon {
               width: 40px;
-              color: #9602D3;
+              color: #03d500;
               cursor: pointer;
               animation: scroll 2s infinite;
           }
@@ -319,7 +318,7 @@
               align-items: self-start;
               flex-direction: column;
               transform: translateX(120%);
-              background-color: #9602D3;
+              background-color: #03d500;
               transition: .5s ease-in-out;
 
               .close {

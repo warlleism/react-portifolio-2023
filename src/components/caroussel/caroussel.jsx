@@ -20,7 +20,7 @@ const Carousel = () => {
         <div className='container-carousel'>
             <div className='container-title-carousel'>
                 <div className='container-title-text'>
-                    <div className='titulo-txt'>Últimos <strong style={{ color: "#9602D3" }}>Projetos</strong></div>
+                    <div className='titulo-txt'>Últimos <strong style={{ color: "#03d500" }}>Projetos</strong></div>
                     <div></div>
                 </div>
                 <Link to={'/projetos'} className='buttom-all-projects'>
@@ -45,7 +45,6 @@ const Carousel = () => {
                                     id='item'
                                 >
                                     <div className='img-content' style={{ backgroundImage: `url(${itens.img})` }}>
-                                        <div className='filter'></div>
                                     </div>
                                     <div className='container-nome-projeto'>{itens.nome}</div>
                                     <div className='container-nome-tecno'>{itens.tecno}</div>

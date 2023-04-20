@@ -8,8 +8,10 @@ const Header = () => {
 
     function centerItens() {
         const item = document.querySelectorAll('#transform-item')
+        const icon = document.getElementById('icon')
         item.forEach((item, index) => {
             setTimeout(() => {
+                icon.style.opacity = '1'
                 item.style.transform = 'translateX(0%)'
             }, (index + 1) * 200)
         })
@@ -18,6 +20,7 @@ const Header = () => {
 
     useEffect(() => {
         centerItens()
+  
     }, [])
 
     function CallNavBar(value) {
@@ -58,9 +61,9 @@ const Header = () => {
             <div className="container-header-content">
                 <div className="container-text-header">
                     <div className="container-text-content">
-                        <div id="transform-item" className="text"><strong style={{ color: "#9602D3", fontWeight: 900 }}>Fo</strong>co <div className="circle" style={{ background: "#9602D3" }}></div></div>
-                        <div id="transform-item" className="text">Tecno<strong style={{ color: "#9602D3", fontWeight: 900 }}>logia</strong> <div className="circle"></div></div>
-                        <div id="transform-item" className="text"><strong style={{ color: "#9602D3", fontWeight: 900 }}>Agili</strong>dade <div className="circle" style={{ background: "#9602D3" }}></div></div>
+                        <div id="transform-item" className="text"><strong style={{ color: "#03d500", fontWeight: 900 }}>Fo</strong>co <div className="circle" style={{ background: "#03d500" }}></div></div>
+                        <div id="transform-item" className="text">Tecno<strong style={{ color: "#03d500", fontWeight: 900 }}>logia</strong> <div className="circle"></div></div>
+                        <div id="transform-item" className="text"><strong style={{ color: "#03d500", fontWeight: 900 }}>Agili</strong>dade <div className="circle" style={{ background: "#03d500" }}></div></div>
                         <div id="transform-item" className="how-i-do">
                             Oque Eu Faço
                         </div>
@@ -70,7 +73,7 @@ const Header = () => {
                         <a href="#sobre" id="transform-item" className="buttom">Sobre mim</a>
                     </div>
                 </div>
-                <div className="conteiner-blob">
+                <div className="conteiner-blob" id="icon">
                     <div className="blob">
                         <img src={img} alt="" />
                     </div>

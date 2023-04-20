@@ -3,7 +3,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #09071A;
 
     .titulo-sobre-mim {
         width: 50%;
@@ -13,13 +12,13 @@
         flex-direction: column;
 
         div:nth-child(1) {
-            color: #7a4cfc;
+            color: #03d500;
             font-weight: 600;
             letter-spacing: 3px;
         }
 
         div:nth-child(2) {
-            color: #400ec9;
+            color: #03d500;
             font-size: 3.5rem;
             margin-top: 10px;
             margin-bottom: 20px;
@@ -28,7 +27,7 @@
         }
 
         div:nth-child(3) {
-            color: #d8b2f7f5;
+            color: #04d50081;
             font-size: 1rem;
             letter-spacing: 4px;
             width: 70%;
@@ -44,7 +43,7 @@
 
 .timeline {
     width: 80%;
-    color: #c4b2f5;
+    color: #51ff00;
 }
 
 .timeline:before {
@@ -53,7 +52,7 @@
     left: 65px;
     width: 3px;
     position: absolute;
-    background: #7645ff;
+    background: #00d552;
     height: calc(100% - 80px);
 }
 
@@ -68,7 +67,7 @@
 
 .timeline .column .title h1 {
     font-size: 10rem;
-    color: #7142f51f;
+    color: #04d5002a;
     font-family: serif;
     letter-spacing: 3px;
     text-align: start;
@@ -76,7 +75,7 @@
 
 .timeline .right .title h1 {
     font-size: 10rem;
-    color: #7142f51f;
+    color: #04d5002a;
     font-family: serif;
     letter-spacing: 3px;
     text-align: end;
@@ -91,8 +90,8 @@
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background: #400ec9;
-    border: 3px solid #9c77ff;
+    background: #03d500;
+    border: 3px solid #03d500;
 }
 
 .timeline .column .title h2 {
@@ -115,7 +114,7 @@
     margin-left: 20px;
     margin-top: 10px;
     font-family: serif;
-    color: #c0aaff5b;
+    color: #04c701;
 }
 
 .right .description p {
@@ -124,12 +123,12 @@
     margin-left: 20px;
     margin-top: 10px;
     font-family: serif;
-    color: #c0aaff5b;
+    color: #03d500;
     text-align: end;
 }
 
 .timeline .column .description {
-    border-left: 1px solid #400ec9;
+    border-left: 1px solid #03d500;
 }
 
 @media (max-width: 1030px) {
@@ -139,7 +138,7 @@
         margin: 0px 0 !important;
 
         div:nth-child(1) {
-            color: #7a4cfc;
+            color: #03d500;
             font-weight: 600;
             letter-spacing: 3px;
         }

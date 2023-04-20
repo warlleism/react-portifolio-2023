@@ -6,12 +6,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(351deg, rgba(68, 0, 255, 1) 0%, rgba(99, 9, 121, 1) 48%, rgba(2, 0, 36, 1) 100%);
 
     .title-projetos {
         top: 12%;
         font-size: 3rem;
-        color: #ce0aff;
+        color: #51ff00;
         font-weight: 100;
         position: abolute;
         padding: 0px 30px;
@@ -26,7 +25,7 @@
         height: 5px;
         content: '';
         position: absolute;
-        background: #ce0aff;
+        background: #51ff00;
     }
 
     .title-projetos::before {
@@ -36,7 +35,7 @@
         content: '';
         height: 5px;
         position: absolute;
-        background: #5c0074;
+        background: #51ff00;
     }
 
     .container-cards-projetos {
@@ -121,14 +120,14 @@
                 height: 90%;
                 z-index: 2;
                 display: flex;
-                color: #8209a0;
+                color: #51ff00;
                 border-radius: 6px;
                 align-items: center;
                 pointer-events: none;
                 flex-direction: column;
                 justify-content: center;
                 transition: .5s ease-in-out;
-                border: solid 4px #8209a0;
+                border: solid 4px #51ff00;
 
                 .container-nome-child {
                     letter-spacing: 10px;

@@ -7,7 +7,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #09071A;
     font-family: 'Roboto', sans-serif;
 
     .container-title-carousel {
@@ -29,12 +28,12 @@
             align-items: center;
             justify-content: center;
             transition: .5s ease-in-out;
-            border: solid 2px #9602D3;
+            border: solid 2px #03d500;
         }
 
         .buttom-all-projects:hover {
             color: #09071A;
-            background-color: #9602D3;
+            background-color: #03d500;
             border: solid 2px #09071A;
         }
 
@@ -51,7 +50,7 @@
                 width: 100%;
                 position: relative;
                 margin-top: 10px;
-                background-color: #9602D3;
+                background-color: #03d500;
             }
 
             div:nth-child(2)::after {
@@ -59,7 +58,7 @@
                 position: absolute;
                 width: 10px;
                 height: 100%;
-                background-color: #09071A;
+                background-color: #1a0c07;
                 ;
                 right: 20px;
             }
@@ -108,25 +107,13 @@
                     background-position: center;
                     background-repeat: no-repeat;
 
-                    .filter {
-                        width: 91%;
-                        height: 100%;
-                        transition: .5s ease-in-out;
-                        background-color: #b300ff23;
-                    }
-                }
-
-                .img-content:hover {
-                    .filter {
-                        opacity: 0;
-                    }
                 }
 
                 .container-nome-projeto {
                     width: 90%;
                     display: flex;
                     margin: 10px 0;
-                    color: #b300ff;
+                    color: #03d500;
                     font-size: 1.5rem;
                     transition: .5s ease-in-out;
                 }
@@ -162,10 +149,6 @@
                     min-width: 100%;
                     min-height: 100%;
                     margin-right: 30px;
-
-                    .filter {
-                        display: none;
-                    }
 
                     .container-nome-projeto {
                         margin: 0;

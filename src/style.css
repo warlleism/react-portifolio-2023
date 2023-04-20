@@ -6,16 +6,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: #0f1216;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-    background: #9602D3;
+    background: #03d500;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #3b0253;
+    background-color: #111111;
 }
 
 .buttom {
@@ -28,5 +32,5 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     border-radius: 5px;
     letter-spacing: 2px;
-    background-color: #9602D3;
+    background-color: #048602;
 }

@@ -6,20 +6,19 @@
       overflow: hidden;
       align-items: center;
       flex-direction: column;
-      background-color: #09071A;
 
       .title-skills {
           margin: 100px 0 130px 0;
 
           div:nth-child(1) {
-              color: #8303b9;
+              color: #03d500;
               font-weight: 100;
               font-size: 1.5rem;
               text-align: center;
           }
 
           div:nth-child(2) {
-              color: #B400FF;
+              color: #03d500;
               font-size: 2.6rem;
               margin-bottom: 10px;
           }
@@ -30,7 +29,7 @@
 
               div {
                   height: 3px;
-                  background-color: #8303b9;
+                  background-color: #03d500;
               }
 
               div:nth-child(1) {
@@ -66,7 +65,7 @@
               align-items: flex-start;
               transition: .8s ease-in-out;
               transform: translateY(300%);
-              background-color: #ad00f715;
+              background-color: #04fa00;
 
               .container-img {
                   width: 70px;
@@ -85,18 +84,18 @@
 
               div:nth-child(2) {
                   font-size: 2rem;
-                  color: #9602D3;
+                  color: #011f00;
                   margin: 10px 0;
               }
 
               div:nth-child(3) {
-                  color: #ffffffc7;
+                  color: #011f00;
                   letter-spacing: 2px;
               }
           }
 
           .card-skills:hover {
-              background-color: #ad00f783;
+              background-color: #027000;
 
               .container-img {
                   background-color: #09071A;
