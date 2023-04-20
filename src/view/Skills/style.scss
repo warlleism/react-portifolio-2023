@@ -95,7 +95,15 @@
           }
 
           .card-skills:hover {
-              background-color: #027000;
+              background-color: #024900;
+
+              div:nth-child(2) {
+                  color: #03d500;
+              }
+
+              div:nth-child(3) {
+                  color: #03d500;
+              }
 
               .container-img {
                   background-color: #09071A;

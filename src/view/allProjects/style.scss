@@ -12,8 +12,8 @@
         font-size: 3rem;
         color: #51ff00;
         font-weight: 100;
-        position: abolute;
         padding: 0px 30px;
+        position: relative;
         margin: 170px 0 80px 0;
         box-sizing: border-box;
     }
@@ -178,10 +178,6 @@
 @media screen and (max-width: 912px) {
     .Allprojects {
         width: 100%;
-
-        .title-projetos {
-            top: 160px;
-        }
 
         .container-cards-projetos {
             .card-project {

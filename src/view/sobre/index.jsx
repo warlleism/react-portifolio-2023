@@ -7,7 +7,7 @@ const Sobre = () => {
             <div className="titulo-sobre-mim">
                 <div>Estudos & Experiência</div>
                 <div>SOBRE MIM</div>
-                <div>Olá! Meu nome é Warllei Martins. Sou um desenvolvedor front end sempre com foco em melhorar.</div>
+                <div>Olá! Meu nome é Warllei Martins. Sou um desenvolvedor front end sempre com foco em evoluir.</div>
             </div>
 
             <div class="timeline">

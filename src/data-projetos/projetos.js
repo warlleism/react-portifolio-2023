@@ -37,7 +37,7 @@ const Projetos = [
         id: 5,
         img: img5,
         nome: "Front end app",
-        tecno: 'ReactJs'
+        tecno: 'React Typescript'
     },
     {
         id: 6,

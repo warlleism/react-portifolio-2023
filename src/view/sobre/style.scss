@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 .sobre-mim {
     display: flex;
     align-items: center;
@@ -15,6 +17,7 @@
             color: #03d500;
             font-weight: 600;
             letter-spacing: 3px;
+
         }
 
         div:nth-child(2) {
@@ -24,14 +27,16 @@
             margin-bottom: 20px;
             letter-spacing: 5px;
             position: relative;
+
         }
 
         div:nth-child(3) {
-            color: #04d50081;
-            font-size: 1rem;
-            letter-spacing: 4px;
             width: 70%;
+            font-size: 1.5rem;
             text-align: center;
+            color: #08ff04b7;
+            letter-spacing: 4px;
+
         }
     }
 }
@@ -44,6 +49,7 @@
 .timeline {
     width: 80%;
     color: #51ff00;
+
 }
 
 .timeline:before {
@@ -65,12 +71,15 @@
     text-align: end;
 }
 
+
 .timeline .column .title h1 {
     font-size: 10rem;
     color: #04d5002a;
     font-family: serif;
     letter-spacing: 3px;
     text-align: start;
+    font-family: 'Oswald', sans-serif !important;
+
 }
 
 .timeline .right .title h1 {
@@ -90,7 +99,7 @@
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background: #03d500;
+    background: #0f1216;
     border: 3px solid #03d500;
 }
 
@@ -99,6 +108,8 @@
     margin-top: -60px;
     letter-spacing: 6px;
     text-align: start;
+    font-family: 'Oswald', sans-serif !important;
+
 }
 
 .timeline .right .title h2 {
@@ -109,12 +120,13 @@
 }
 
 .timeline .column .description p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 20px;
     margin-left: 20px;
     margin-top: 10px;
     font-family: serif;
     color: #04c701;
+    font-family: 'Oswald', sans-serif !important;
 }
 
 .right .description p {

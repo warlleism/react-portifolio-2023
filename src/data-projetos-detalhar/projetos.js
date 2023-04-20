@@ -80,7 +80,7 @@ const Projetos = [
         img: img_9,
         img2: img_10,
         nome: "Front end app",
-        text: "Web Site",
+        text: "Web System",
         tecno: 'ReactJs',
         color: "#011132"
     },
@@ -98,7 +98,7 @@ const Projetos = [
         img: img_13,
         img2: img_14,
         nome: "Front end app",
-        text: "Web Site",
+        text: "Web System",
         tecno: 'Reactjs',
         color: "#097954"
     },

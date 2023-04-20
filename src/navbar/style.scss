@@ -20,8 +20,8 @@
         justify-content: space-between;
 
         a {
-            color: #fff;
-            font-weight: 400;
+            color: #181818;
+            font-weight: 700;
             font-size: 1.2rem;
             position: relative;
             letter-spacing: 4px;
@@ -29,11 +29,11 @@
         }
 
         a:after {
-            content: '';
-            width: 0%;
             left: 0;
-            bottom: -10px;
+            width: 0%;
+            content: '';
             height: 2px;
+            bottom: -10px;
             position: absolute;
             background: #51ff00;
             transition: .5s ease-in-out;
