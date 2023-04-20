@@ -20,7 +20,7 @@ const Header = () => {
 
     useEffect(() => {
         centerItens()
-  
+
     }, [])
 
     function CallNavBar(value) {
@@ -46,15 +46,15 @@ const Header = () => {
                     Currículo
                 </a>
             </div>
-            <div className="nav-bar-conteiner-mobile" id="menu">
-                <span className="material-symbols-outlined close" translate="no" onClick={() => CallNavBar(120)}>
+            <div className="nav-bar-conteiner-mobile" id="menu" onClick={() => CallNavBar(120)}>
+                <span className="material-symbols-outlined close" translate="no">
                     close
                 </span>
                 <div className="nav-bar">
-                    <a href="#" onClick={() => CallNavBar(120)}>Início</a>
-                    <a href="#sobre" onClick={() => CallNavBar(120)}>Sobre</a>
-                    <a href="#projetos" onClick={() => CallNavBar(120)}>Projetos</a>
-                    <a href="#skills" onClick={() => CallNavBar(120)}>Tecnologias</a>
+                    <a href="#">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#skills">Tecnologias</a>
                     <a href={curriculo}>Currículo</a>
                 </div>
             </div>
