@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
-import DataSkills from "../../skills/skills";
+import Data from "../../skills/skills";
+import { useTranslation } from 'react-i18next'
 import './style.scss'
 
 const Skills = () => {
+
+
+    const { t } = useTranslation(["home"])
 
     function centerItens() {
         const item = document.querySelectorAll('#cards')
@@ -15,7 +19,6 @@ const Skills = () => {
                 item.style.transition = '.8s ease-in-out';
             }, (index + 1) * 200)
         })
-
     }
 
     useEffect(() => {
@@ -40,7 +43,7 @@ const Skills = () => {
 
             <div className="container-cards">
                 {
-                    DataSkills.map((e) => {
+                    Data(t).map((e) => {
                         return (
                             <div className="card-skills" id="cards">
                                 <div className="container-img">

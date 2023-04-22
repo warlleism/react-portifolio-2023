@@ -1,11 +1,14 @@
 import Projetos from '../../data-projetos/projetos';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import './style.scss'
 
 const Carousel = () => {
+
+    const { t } = useTranslation(["home"])
 
     const [width, setWidth] = useState(0)
     const carousel = useRef(null);
@@ -20,11 +23,11 @@ const Carousel = () => {
         <div className='container-carousel'>
             <div className='container-title-carousel'>
                 <div className='container-title-text'>
-                    <div className='titulo-txt'>Últimos <strong style={{ color: "#03d500" }}>Projetos</strong></div>
+                    <div className='titulo-txt'>{t("projetos.titulo-1")} <strong style={{ color: "#03d500" }}>{t("projetos.titulo-2")}</strong></div>
                     <div></div>
                 </div>
                 <Link to={'/projetos'} className='buttom-all-projects'>
-                    Ver Todos
+                    {t("projetos.ver-todos")}
                 </Link>
             </div>
 

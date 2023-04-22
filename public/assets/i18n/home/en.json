@@ -1,0 +1,50 @@
+{
+    "header": {
+        "inicio": "Home",
+        "sobre": "About",
+        "projetos": "Projects",
+        "tecnologias": "Technologies",
+        "curriculo": "Curriculum",
+        "text1-1": "Fo",
+        "text1-2": "cus",
+        "text2-1": "Techno",
+        "text2-2": "logies",
+        "text3-1": "Agi",
+        "text3-2": "lity",
+        "oque-faco": "What do I do",
+        "text": "Always focusing on agile development with good practices in search of a good user experience",
+        "sobre-mim": "About me"
+    },
+    "skills": {
+        "html": "HTML (HyperText Markup Language) is the most basic building block of the web. Defines the meaning and structure of web content.",
+        "css": "Cascading Style Sheets is a mechanism for adding styles to a web page, either applied directly to HTML tags or contained within <style> tags.",
+        "javascript": "JavaScript is a structured, high-level scripting, dynamically typed, multiparadigm, interpreted programming language. Along with HTML and CSS, JavaScript is one of the three main technologies on the World Wide Web.",
+        "typescript": "TypeScript is an open source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language.",
+        "reactjs": "React is a free and open-source front-end JavaScript library for creating component-based user interfaces. It is maintained by Meta and a community of individual developers and companies.",
+        "reactnative": "React Native is a Javascript library created by Facebook. It is used to develop apps for Android and iOS systems natively."
+    },
+    "projetos": {
+        "titulo-1": "Latest",
+        "titulo-2": "Projects",
+        "ver-todos": "See all"
+    },
+    "sobreMim": {
+        "estudos": "Studies & Experience",
+        "sobre-mim": "About Me",
+        "text": "Hello! My name is Warllei Martins. I'm a front end developer always focused on evolving.",
+        "titulo-1": "VILA VELHA UNIVERSITY",
+        "desc-1": "Analysis and systems development.",
+        "titulo-2": "REACT JS",
+        "desc-2": "React is an open source JavaScript front-end library focused on creating user interfaces on web pages.",
+        "titulo-3": "FRAMEWORK REACT NATIVE",
+        "desc-3": "React Native is a Javascript library created by Facebook. It is used to develop apps for Android and iOS systems natively.",
+        "titulo-4": "QUATTROR COMERCIAL (INTERNSHIP)",
+        "desc-4": "Quattror stands out in the national and international market for its quality, transparency, optimization of time and costs in the provision of Export, Import and Logistics services in general, including administration, coordination, monitoring and execution of the entire process. We are committed to meeting the requirements and expectations of the client, always ensuring the pre-established deadlines.",
+        "titulo-5": "NODEJS",
+        "desc-5": "Node.js is open-source, cross-platform software based on Google's V8 interpreter that allows you to run JavaScript code outside of a web browser. The main feature of Node.js is its asynchronous and event-driven architecture",
+        "titulo-6": "UI & WEB DESIGN",
+        "desc-6": "User interface design or user interface engineering is the development of computers, applications, machines, mobile communication devices, software and websites with a focus on user experience and interaction.",
+        "titulo-7": "TYPESCRIPT",
+        "desc-7": "TypeScript is an open source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language."
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "header": {
+        "inicio": "Início",
+        "sobre": "Sobre",
+        "projetos": "Projetos",
+        "tecnologias": "Tecnologias",
+        "curriculo": "Currículo",
+        "text1-1": "Fo",
+        "text1-2": "co",
+        "text2-1": "Tecno",
+        "text2-2": "logia",
+        "text3-1": "Agili",
+        "text3-2": "dade",
+        "oque-faco": "Oque Eu Faço",
+        "text": "Sempre com foco no desenvolvimento ágil com boas práticas em busca de uma boa experiencia para o usuário",
+        "sobre-mim": "Sobre mim"
+    },
+    "skills": {
+        "html": "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.",
+        "css": "Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>.",
+        "javascript": "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.",
+        "typescript": "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
+        "reactjs": "React é uma biblioteca JavaScript front-end gratuita e de código aberto para criar interfaces de usuário baseadas em componentes. É mantido pela Meta e uma comunidade de desenvolvedores e empresas individuais.",
+        "reactnative": "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa."
+    },
+    "projetos": {
+        "titulo-1": "Últimos",
+        "titulo-2": "Projetos",
+        "ver-todos": "Ver Todos"
+    },
+    "sobreMim": {
+        "estudos": "Estudos & Experiência",
+        "sobre-mim": "SOBRE MIM",
+        "text": "Olá! Meu nome é Warllei Martins. Sou um desenvolvedor front end sempre com foco em evoluir.",
+        "titulo-1": "UNIVERSIDADE VILA VELHA",
+        "desc-1": "Análise e Desenvolvimento de Sistemas.",
+        "titulo-2": "REACT JS",
+        "desc-2": "O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
+        "titulo-3": "FRAMEWORK REACT NATIVE",
+        "desc-3": "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa.",
+        "titulo-4": "QUATTROR COMERCIAL (ESTÁGIO)",
+        "desc-4": "A Quattror se destaca no mercado nacional e internacional pela qualidade, transparência, otimização de tempo e custos na prestação dos serviços de Exportação, Importação e Logística em geral, incluindo administração, coordenação, acompanhamento e execução de todo o processo. Nos comprometemos em atender as exigências e expectativas do cliente, assegurando sempre os prazos pré estabelecidos.",
+        "titulo-5": "NODEJS",
+        "desc-5": "Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos",
+        "titulo-6": "UI & WEB DESIGN",
+        "desc-6": "Design de interface de utilizador ou engenharia de interface de utilizador é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência do utilizadores e interação.",
+        "titulo-7": "TYPESCRIPT",
+        "desc-7": "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem."
+    }
+}
