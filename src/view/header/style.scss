@@ -46,10 +46,6 @@
           display: none;
       }
 
-      .nav-bar-conteiner-mobile {
-          display: none;
-      }
-
       .nav-bar-conteiner {
           width: 80%;
           display: flex;
@@ -298,7 +294,7 @@
               top: 0;
               z-index: 9;
               right: 0px;
-              color: #fff;
+              color: #03d500;
               display: block;
               position: fixed;
               font-size: 4rem;
@@ -313,23 +309,34 @@
                       width: 100%;
 
                       .text {
+                          display: flex;
                           font-size: 4rem;
-                          width: 100%;
+                          margin: 0 auto;
+                          width: 90% !important;
+                          justify-content: start;
+                          text-align: start !important;
                       }
 
                       .how-i-do {
-                          text-align: center;
+                          text-align: start !important;
                           margin: 30px auto;
+                          width: 90%;
                       }
+
+                      .how-i-do::after {
+                          display: none !important;
+                      }
+
 
                       .how-i-do-text {
                           width: 90%;
                           margin: 0 auto;
-                          text-align: center;
+                          text-align: start !important;
                       }
 
+
                       .buttom {
-                          margin: 30px auto;
+                          margin: 30px 20px !important;
                       }
                   }
               }
@@ -343,81 +350,6 @@
               display: none;
           }
 
-          .nav-bar-conteiner-mobile {
-              top: 0;
-              right: 0;
-              z-index: 9;
-              width: 80%;
-              display: flex;
-              height: 100vh;
-              position: fixed;
-              align-items: self-start;
-              flex-direction: column;
-              transform: translateX(120%);
-              background-color: #03d500;
-              transition: .5s ease-in-out;
-
-              .switch-mobile {
-                  bottom: 20px;
-                  left: 20px;
-                  z-index: 10;
-                  width: 100px;
-                  height: 40px;
-                  display: flex;
-                  position: fixed;
-                  overflow: hidden;
-                  border-radius: 100px;
-                  background-color: #08bb05;
-                  border: 2px solid #5bff10;
-
-                  .block {
-                      width: 50%;
-                      height: 100%;
-                      position: absolute;
-                      background-color: #267701;
-                      transition: .3s ease-in-out;
-                  }
-
-                  .linguage {
-                      width: 50%;
-                      display: flex;
-                      color: #fff;
-                      font-weight: 700;
-                      cursor: pointer;
-                      align-items: center;
-                      justify-content: center;
-                  }
-              }
-
-              .close {
-                  top: 10px;
-                  right: 10px;
-                  color: #fff;
-                  z-index: 2;
-                  display: block;
-                  font-size: 3rem;
-                  position: absolute;
-              }
-
-
-              .nav-bar {
-                  width: 100%;
-                  height: 50%;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-between;
-
-                  a {
-                      width: 60%;
-                      color: #fff;
-                      padding: 0 30px;
-                      margin-top: 20px;
-                      font-size: 1.5rem;
-                      box-sizing: border-box;
-                  }
-
-              }
-          }
       }
 
 
@@ -447,7 +379,6 @@
                       .how-i-do-text {
                           width: 90%;
                           margin: 0 auto;
-                          text-align: center;
                       }
 
                       .buttom {

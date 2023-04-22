@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import img from '../../images/astronauta.png'
 import icon from '../../images/mouse-icon.png'
 import curriculo from '../../data-projetos/curriculo.pdf'
 import { useTranslation } from 'react-i18next'
 import './style.scss'
+import Navbar from "../../components/mobile/navBar";
 
 const Header = () => {
 
@@ -22,17 +23,16 @@ const Header = () => {
 
     useEffect(() => {
         centerItens()
+        let lng = localStorage.getItem('linguage')
+        if (lng)
+            i18n.changeLanguage(lng)
     }, [])
 
-
     const languageChange = (value) => {
-
-        const block = document.getElementById('block')
-
         if (value == 'pt') {
-            block.style.transform = 'translateX(0%)'
+            localStorage.setItem('linguage', 'pt')
         } else {
-            block.style.transform = 'translateX(100%)'
+            localStorage.setItem('linguage', 'en')
         }
         i18n.changeLanguage(value)
     }
@@ -66,23 +66,9 @@ const Header = () => {
                     {t("header.curriculo")}
                 </a>
             </div>
-            <div className="nav-bar-conteiner-mobile" id="menu" onClick={() => CallNavBar(120)}>
-                <span className="material-symbols-outlined close" translate="no">
-                    close
-                </span>
-                <div className="nav-bar">
-                    <a href="#">{t("header.inicio")}</a>
-                    <a href="#sobre">{t("header.projetos")}</a>
-                    <a href="#projetos">{t("header.projetos")}</a>
-                    <a href="#skills">{t("header.tecnologias")}</a>
-                    <a href={curriculo}>{t("header.curriculo")}</a>
-                </div>
-                <div className="switch-mobile">
-                    <div className="block" id="block"></div>
-                    <span className="linguage" onClick={() => languageChange('pt')}>PT</span>
-                    <span className="linguage" onClick={() => languageChange('en')}>EN</span>
-                </div>
-            </div>
+
+            <Navbar />
+
             <div className="container-header-content">
                 <div className="container-text-header">
                     <div className="container-text-content">

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.nav-bar-conteiner-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 912px) {
+
+    .nav-bar-conteiner-mobile {
+        top: 0;
+        right: 0;
+        z-index: 9;
+        width: 80%;
+        display: flex;
+        height: 100vh;
+        position: fixed;
+        align-items: self-start;
+        flex-direction: column;
+        transform: translateX(120%);
+        background-color: #03d500;
+        transition: .5s ease-in-out;
+
+        .switch-mobile {
+            bottom: 20px;
+            left: 20px;
+            z-index: 10;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            position: fixed;
+            overflow: hidden;
+            border-radius: 100px;
+            background-color: #08bb05;
+            border: 2px solid #5bff10;
+
+            .block {
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                background-color: #267701;
+                transition: .3s ease-in-out;
+            }
+
+            .linguage {
+                width: 50%;
+                display: flex;
+                color: #fff;
+                font-weight: 700;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .close {
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            z-index: 2;
+            display: block;
+            font-size: 3rem;
+            position: absolute;
+        }
+
+
+        .nav-bar {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+                width: 60%;
+                color: #fff;
+                padding: 0 30px;
+                margin-top: 20px;
+                font-size: 1.5rem;
+                box-sizing: border-box;
+            }
+
+        }
+    }
+}
