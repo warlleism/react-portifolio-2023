@@ -32,17 +32,16 @@
                   width: 45px;
                   height: 45px;
                   display: flex;
+                  padding: 5px;
                   position: relative;
                   border-radius: 100%;
-                  padding: 5px;
                   align-items: center;
                   justify-content: center;
                   background-color: #04ff00;
 
                   .profile {
                       z-index: 2;
-                      width: 90%;
-                      height: 90%;
+                      max-width: 100%;
                   }
 
                   .contact {
@@ -102,8 +101,8 @@
                   content: '';
                   width: 0%;
                   left: 0;
-                  bottom: -10px;
                   height: 2px;
+                  bottom: -10px;
                   position: absolute;
                   background: #03d500;
                   transition: .5s ease-in-out;
