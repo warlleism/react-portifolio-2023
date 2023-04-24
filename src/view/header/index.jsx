@@ -29,9 +29,12 @@ const Header = () => {
     }, [])
 
     const languageChange = (value) => {
+        const block = document.getElementById('block')
         if (value == 'pt') {
+            block.style.transform = 'translateX(0%)'
             localStorage.setItem('linguage', 'pt')
         } else {
+            block.style.transform = 'translateX(100%)'
             localStorage.setItem('linguage', 'en')
         }
         i18n.changeLanguage(value)
@@ -45,12 +48,6 @@ const Header = () => {
     return (
         <div className="header" id="header">
 
-            <div className="switch">
-                <div className="block" id="block"></div>
-                <span className="linguage" onClick={() => languageChange('pt')}>PT</span>
-                <span className="linguage" onClick={() => languageChange('en')}>EN</span>
-            </div>
-
             <span className="material-symbols-outlined menu" translate="no" onClick={() => CallNavBar(0)}>
                 menu
             </span>
@@ -62,9 +59,17 @@ const Header = () => {
                     <a href="#projetos">{t("header.projetos")}</a>
                     <a href="#skills">{t("header.tecnologias")}</a>
                 </div>
-                <a href={curriculo} className="buttom">
-                    {t("header.curriculo")}
-                </a>
+
+                <div className="container-curriculo">
+                    <a href={curriculo} className="buttom">
+                        {t("header.curriculo")}
+                    </a>
+                    <div className="switch">
+                        <div className="block" id="block"></div>
+                        <span className="linguage" onClick={() => languageChange('pt')}>PT</span>
+                        <span className="linguage" onClick={() => languageChange('en')}>EN</span>
+                    </div>
+                </div>
             </div>
 
             <Navbar />

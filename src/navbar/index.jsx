@@ -17,7 +17,6 @@ const Navbar = () => {
             } else {
                 setScrollParaBaixo(false);
             }
-
             scrollRef.current = scrollAtual;
         }
 
@@ -36,7 +35,7 @@ const Navbar = () => {
             <div className="nav-bar-default">
                 <Link to={'/'}>Início</Link>
             </div>
-            <a href={curriculo} className="buttom">
+            <a href={curriculo} className="buttom" style={{ fontWeight: "600" }}>
                 Currículo
             </a>
         </div>

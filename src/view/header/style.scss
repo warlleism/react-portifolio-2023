@@ -10,38 +10,6 @@
       justify-content: center;
       transition: .5s ease-in-out;
 
-      .switch {
-          top: 30px;
-          right: 30px;
-          z-index: 10;
-          width: 100px;
-          height: 40px;
-          display: flex;
-          position: fixed;
-          overflow: hidden;
-          border-radius: 100px;
-          background-color: #04ff00;
-          border: 2px solid #5bff10;
-
-          .block {
-              width: 50%;
-              height: 100%;
-              position: absolute;
-              background-color: #267701;
-              transition: .3s ease-in-out;
-          }
-
-          .linguage {
-              width: 50%;
-              display: flex;
-              color: #fff;
-              font-weight: 700;
-              cursor: pointer;
-              align-items: center;
-              justify-content: center;
-          }
-      }
-
       .menu {
           display: none;
       }
@@ -51,6 +19,45 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          .container-curriculo {
+              width: 300px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+
+              .switch {
+                  top: 30px;
+                  right: 30px;
+                  z-index: 10;
+                  width: 100px;
+                  height: 40px;
+                  display: flex;
+                  position: absolute;
+                  overflow: hidden;
+                  border-radius: 100px;
+                  background-color: #04ff00;
+                  border: 2px solid #5bff10;
+
+                  .block {
+                      width: 50%;
+                      height: 100%;
+                      position: absolute;
+                      background-color: #267701;
+                      transition: .3s ease-in-out;
+                  }
+
+                  .linguage {
+                      width: 50%;
+                      display: flex;
+                      color: #fff;
+                      font-weight: 700;
+                      cursor: pointer;
+                      align-items: center;
+                      justify-content: center;
+                  }
+              }
+          }
 
           .nav-bar {
               display: flex;
@@ -62,7 +69,7 @@
                   font-weight: 300;
                   font-size: 1.2rem;
                   position: relative;
-                  letter-spacing: 4px;
+                  letter-spacing: 2px;
                   text-decoration: none;
               }
 
@@ -172,13 +179,12 @@
               transition: 1.5s ease-in-out;
 
               .blob {
-                  width: 500px;
-                  height: 500px;
+                  width: 570px;
+                  height: 570px;
                   position: absolute;
                   background-size: cover;
                   background-position: center;
                   background-repeat: no-repeat;
-                  animation: move 25s infinite alternate;
                   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
                   border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
                   transform: translate(-100px, -50px) rotate(-90deg);
@@ -187,9 +193,27 @@
                   img {
                       left: 18px;
                       top: -10px;
-                      max-width: 400px;
+                      max-width: 470px;
                       position: relative;
                       transform: rotate(0.2turn);
+                      animation: astro 5s infinite;
+                  }
+
+                  @keyframes astro {
+
+                      0% {
+                          left: -10px;
+                      }
+
+                      50% {
+                          left: 20px;
+
+                      }
+
+                      100% {
+                          left: -10px;
+                      }
+
                   }
               }
 
@@ -312,31 +336,29 @@
                           display: flex;
                           font-size: 4rem;
                           margin: 0 auto;
-                          width: 90% !important;
-                          justify-content: start;
-                          text-align: start !important;
+                          width: 90%;
                       }
 
                       .how-i-do {
-                          text-align: start !important;
+                          text-align: center;
                           margin: 30px auto;
                           width: 90%;
                       }
 
                       .how-i-do::after {
-                          display: none !important;
+                          display: none;
                       }
 
 
                       .how-i-do-text {
                           width: 90%;
                           margin: 0 auto;
-                          text-align: start !important;
+                          text-align: center;
                       }
 
 
                       .buttom {
-                          margin: 30px 20px !important;
+                          margin: 30px auto;
                       }
                   }
               }
@@ -366,23 +388,35 @@
                   .container-text-content {
                       width: 100%;
 
+
                       .text {
-                          font-size: 3rem;
-                          width: 100%;
+                          display: flex;
+                          font-size: 3.4rem;
+                          margin: 0 auto;
+                          width: 90% !important;
+                          justify-content: start !important;
+                          text-align: start !important;
                       }
 
                       .how-i-do {
-                          text-align: center;
+                          text-align: start !important;
                           margin: 30px auto;
+                          width: 90%;
                       }
+
+                      .how-i-do::after {
+                          display: none !important;
+                      }
+
 
                       .how-i-do-text {
                           width: 90%;
                           margin: 0 auto;
+                          text-align: start !important;
                       }
 
                       .buttom {
-                          margin: 30px auto;
+                          margin: 30px 20px !important;
                       }
                   }
               }

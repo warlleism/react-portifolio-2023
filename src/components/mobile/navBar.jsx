@@ -19,14 +19,10 @@ const Navbar = () => {
     }, [])
 
     const languageChange = (value) => {
-        const block = document.getElementById('block')
         if (value == 'pt') {
-            block.style.transform = 'translateX(0%)'
             localStorage.setItem('linguage', 'pt')
         } else {
-            block.style.transform = 'translateX(100%)'
             localStorage.setItem('linguage', 'en')
-
         }
         i18n.changeLanguage(value)
     }
