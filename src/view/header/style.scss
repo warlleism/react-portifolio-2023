@@ -448,3 +448,18 @@
           }
       }
   }
+
+  @media screen and (max-width: 400px) {
+      .header {
+          .container-header-content {
+              .container-text-header {
+                  .container-text-content {
+                      .text {
+                          font-size: 3.1rem;
+                      }
+
+                  }
+              }
+          }
+      }
+  }

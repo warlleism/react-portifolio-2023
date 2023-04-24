@@ -37,7 +37,6 @@ const Header = () => {
         if (lng == 'en')
             block.style.transform = 'translateX(100%)'
 
-
     }, [])
 
     const contactIcons = () => {
@@ -71,7 +70,6 @@ const Header = () => {
 
     return (
         <div className="header" id="header">
-
             <span className="material-symbols-outlined menu" translate="no" onClick={() => CallNavBar(0)}>
                 menu
             </span>

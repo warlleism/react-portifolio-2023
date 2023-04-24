@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
     padding: 14px 0px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 100px;
     letter-spacing: 2px;
     background-color: #03c000;
 }
