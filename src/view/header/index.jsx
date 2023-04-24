@@ -1,14 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import img from '../../images/astronauta.png'
 import icon from '../../images/mouse-icon.png'
 import curriculo from '../../data-projetos/curriculo.pdf'
 import { useTranslation } from 'react-i18next'
 import './style.scss'
 import Navbar from "../../components/mobile/navBar";
+import linkedin from '../../images/linkedin.png'
+import profile from '../../images/profile.png'
+import github from '../../images/github.png'
+import instagram from '../../images/instagram.png'
 
 const Header = () => {
 
     const { i18n, t } = useTranslation(["home"])
+    const [count, setCount] = useState(0)
 
     function centerItens() {
         const item = document.querySelectorAll('#transform-item')
@@ -23,10 +28,29 @@ const Header = () => {
 
     useEffect(() => {
         centerItens()
+        contactIcons()
+        const block = document.getElementById('block')
         let lng = localStorage.getItem('linguage')
         if (lng)
             i18n.changeLanguage(lng)
+
+        if (lng == 'en')
+            block.style.transform = 'translateX(100%)'
+
+
     }, [])
+
+    const contactIcons = () => {
+        setCount(count === 1 ? 0 : 1)
+        const icons = document.querySelectorAll('#iconContact')
+        const translateY = count === 1 ? '130%' : '0px'
+        const translateX = count === 1 ? ['-60px', '0px', '60px'] : ['0px', '0px', '0px']
+        icons.forEach((icon, i) => {
+            setTimeout(() => {
+                icon.style.transform = `translateY(${translateY}) translateX(${translateX[i]})`
+            }, (i + 1) * 100)
+        })
+    }
 
     const languageChange = (value) => {
         const block = document.getElementById('block')
@@ -68,6 +92,18 @@ const Header = () => {
                         <div className="block" id="block"></div>
                         <span className="linguage" onClick={() => languageChange('pt')}>PT</span>
                         <span className="linguage" onClick={() => languageChange('en')}>EN</span>
+                    </div>
+                    <div className="icons" onClick={() => contactIcons()}>
+                        <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="_blank" className="icon1 contact" id="iconContact">
+                            <img src={linkedin} alt="" />
+                        </a>
+                        <a href="https://github.com/warlleism" target="_blank" className="icon2 contact" id="iconContact">
+                            <img src={github} alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/warlleimartinsdev/" target="_blank" className="icon3 contact" id="iconContact">
+                            <img src={instagram} alt="" />
+                        </a>
+                        <img src={profile} className="profile contact" alt="" />
                     </div>
                 </div>
             </div>
