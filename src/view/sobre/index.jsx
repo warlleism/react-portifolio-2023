@@ -31,7 +31,7 @@ const Sobre = () => {
                         <h1>2022</h1>
                         <h2>{t("sobreMim.titulo-2")}</h2>
                     </div>
-                    <div class="description">
+                    <div class="description right-border">
                         <p>{t("sobreMim.desc-2")}</p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const Sobre = () => {
                         <h1>2022 </h1>
                         <h2>{t("sobreMim.titulo-4")}</h2>
                     </div>
-                    <div class="description">
+                    <div class="description right-border">
                         <p>{t("sobreMim.desc-4")}</p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const Sobre = () => {
                         <h1>2022</h1>
                         <h2>{t("sobreMim.titulo-6")}</h2>
                     </div>
-                    <div class="description">
+                    <div class="description right-border">
                         <p>{t("sobreMim.desc-6")}</p>
                     </div>
                 </div>

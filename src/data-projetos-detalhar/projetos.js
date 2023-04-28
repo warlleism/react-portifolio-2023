@@ -19,10 +19,22 @@ import img_18 from '../images/projetos/no-green-bar/amazonia2.png'
 import img_19 from '../images/projetos/no-green-bar/cocacola.png'
 import img_20 from '../images/projetos/no-green-bar/ford.png'
 import img_21 from '../images/projetos/no-green-bar/ford2.png'
+import img_22 from '../images/projetos/no-green-bar/pizza.png'
+import img_23 from '../images/projetos/no-green-bar/pizza2.png'
 
 const Projetos = [
+
     {
-        id:0,
+        id: 0,
+        img: img_22,
+        img2: img_23,
+        nome: "Front end app",
+        text: "Web Site",
+        tecno: 'NextJs',
+        color: "orange"
+    },
+    {
+        id: 1,
         img: img_19,
         img2: img_19,
         nome: "Web Design",
@@ -31,7 +43,7 @@ const Projetos = [
         color: "red"
     },
     {
-        id: 1,
+        id: 2,
         img: img_20,
         img2: img_21,
         nome: "Web Design",
@@ -40,7 +52,7 @@ const Projetos = [
         color: "blue"
     },
     {
-        id: 2,
+        id: 3,
         img: img_1,
         img2: img_2,
         nome: "Web Design",
@@ -49,7 +61,7 @@ const Projetos = [
         color: "#09ff00"
     },
     {
-        id: 3,
+        id: 4,
         img: img_3,
         img2: img_4,
         nome: "Front end app",
@@ -58,7 +70,7 @@ const Projetos = [
         color: "#ff8d00"
     },
     {
-        id: 4,
+        id: 5,
         img: img_5,
         img2: img_6,
         nome: "Web Design",
@@ -67,7 +79,7 @@ const Projetos = [
         color: "#093739"
     },
     {
-        id: 5,
+        id: 6,
         img: img_7,
         img2: img_8,
         nome: "Front end app",
@@ -76,7 +88,7 @@ const Projetos = [
         color: "#121212"
     },
     {
-        id: 6,
+        id: 7,
         img: img_9,
         img2: img_10,
         nome: "Front end app",
@@ -85,7 +97,7 @@ const Projetos = [
         color: "#011132"
     },
     {
-        id: 7,
+        id: 8,
         img: img_11,
         img2: img_12,
         nome: "Front end app",
@@ -94,7 +106,7 @@ const Projetos = [
         color: "#383838"
     },
     {
-        id: 8,
+        id: 9,
         img: img_13,
         img2: img_14,
         nome: "Front end app",
@@ -103,16 +115,16 @@ const Projetos = [
         color: "#097954"
     },
     {
-        id: 9,
+        id: 10,
         img: img_15,
         img2: img_16,
         nome: "Front end app",
         text: "Web Site",
-        tecno: 'Reactjs',
+        tecno: 'HTML/CSS',
         color: "#262626"
     },
     {
-        id: 10,
+        id: 11,
         img: img_17,
         img2: img_18,
         nome: "Front end app",
@@ -120,6 +132,7 @@ const Projetos = [
         tecno: 'Reactjs',
         color: "green"
     },
+   
 ]
 
 export default Projetos;
