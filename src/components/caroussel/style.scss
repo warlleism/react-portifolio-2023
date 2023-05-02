@@ -165,3 +165,42 @@
         }
     }
 }
+
+@media screen and (max-width: 912px) {
+    .container-carousel {
+        .container-title-carousel {
+            margin: 0;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .buttom-all-projects {
+                margin-top: 20px;
+            }
+        }
+
+        .carousel {
+            .inner {
+                padding: 0;
+                .item {
+                    min-width: 80%;
+                    min-height: 80%;
+                    margin-right: 30px;
+
+                    .container-nome-projeto {
+                        margin: 0;
+                        width: 100%;
+                        margin: -80px 0 0 0;
+                        text-align: center;
+                        justify-content: center;
+                    }
+
+                    .container-nome-tecno {
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

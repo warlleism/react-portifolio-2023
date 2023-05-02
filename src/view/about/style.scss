@@ -2,16 +2,24 @@
 
 .sobre-mim {
     display: flex;
+    overflow: hidden;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 70%;
+    margin: 0 auto;
 
     .titulo-sobre-mim {
-        width: 50%;
+        width: 100%;
         display: flex;
         margin: 200px 0;
         align-items: center;
         flex-direction: column;
+
+        div {
+            transform: translateX(500%);
+            transition: .5s ease-in-out;
+        }
 
         div:nth-child(1) {
             color: #03d500;
@@ -64,6 +72,8 @@
 
 .timeline .column {
     position: relative;
+    transition: 1s ease-in-out;
+    transform: translateX(200%);
     margin: 40px 40px 40px 120px;
 }
 
@@ -169,6 +179,13 @@
 
 }
 
+@media (max-width: 830px) {
+
+    .sobre-mim {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 412px) {
 
     .timeline {
@@ -176,7 +193,13 @@
     }
 
     .titulo-sobre-mim {
+        width: 100%;
+        text-align: center;
         margin: 30px 0 100px 0 !important;
+
+        div:nth-child(2){
+            font-size: 3rem !important;
+        }
     }
 
     .timeline .column .title h1:before {

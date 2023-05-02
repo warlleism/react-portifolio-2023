@@ -1,12 +1,12 @@
-import img1 from '../images/projetos/detalhar/spotfy.png'
-import img2 from '../images/projetos/detalhar/nike.png'
-import img3 from '../images/projetos/detalhar/rh.png'
-import img4 from '../images/projetos/detalhar/insider.png'
-import img5 from '../images/projetos/detalhar/stock.png'
-import img6 from '../images/projetos/detalhar/last.png'
-import img7 from '../images/projetos/detalhar/medical.png'
-import img8 from '../images/projetos/detalhar/mobile.png'
-import img9 from '../images/projetos/detalhar/flatout.png'
+import img1 from '../images/projetos/no-green-bar/spotfy.png'
+import img2 from '../images/projetos/no-green-bar/nike.png'
+import img3 from '../images/projetos/no-green-bar/rh.png'
+import img4 from '../images/projetos/no-green-bar/insider.png'
+import img5 from '../images/projetos/no-green-bar/stock.png'
+import img6 from '../images/projetos/no-green-bar/last.png'
+import img7 from '../images/projetos/no-green-bar/medical.png'
+import img8 from '../images/projetos/no-green-bar/mobile.png'
+import img9 from '../images/projetos/no-green-bar/flatout.png'
 
 const Projetos = [
     {
@@ -19,30 +19,30 @@ const Projetos = [
         id: 2,
         img: img2,
         nome: "Web Design",
-        tecno: 'ReactJs'
+        tecno: 'React JSX'
     },
     {
         id: 3,
         img: img3,
-        nome: "Front end app",
-        tecno: 'ReactJs'
+        nome: "Front-end app",
+        tecno: 'React JSX'
     },
     {
         id: 4,
         img: img4,
-        nome: "Front end app",
-        tecno: 'ReactJs'
+        nome: "Front-end app",
+        tecno: 'React JSX'
     },
     {
         id: 5,
         img: img5,
-        nome: "Front end app",
-        tecno: 'React Typescript'
+        nome: "Front-end app",
+        tecno: 'React TSX'
     },
     {
         id: 6,
         img: img6,
-        nome: "Front end app",
+        nome: "Front-end app",
         tecno: 'React Native'
     },
     {
@@ -54,7 +54,7 @@ const Projetos = [
     {
         id:8,
         img: img8,
-        nome: "Web Design",
+        nome: "React Native",
         tecno: 'Figma'
     },
     {

@@ -448,8 +448,11 @@
       }
   }
 
+  
   @media screen and (max-width: 400px) {
       .header {
+        box-sizing: border-box;
+        padding: 20px;
           .container-header-content {
               .container-text-header {
                   .container-text-content {

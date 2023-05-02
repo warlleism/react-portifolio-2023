@@ -15,9 +15,6 @@ const Skills = () => {
                 item.style.transform = 'translateY(0%)'
                 item.style.transition = '1s ease-in-out';
             }, (index + 1) * 200)
-            setTimeout(() => {
-                item.style.transition = '.8s ease-in-out';
-            }, (index + 1) * 200)
         })
     }
 

@@ -33,7 +33,6 @@ const Header = () => {
         let lng = localStorage.getItem('linguage')
         if (lng)
             i18n.changeLanguage(lng)
-
         if (lng == 'en')
             block.style.transform = 'translateX(100%)'
 

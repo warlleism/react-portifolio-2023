@@ -1,7 +1,7 @@
 import Skills from '../../view/Skills'
 import Header from '../../view/header'
 import Projects from '../../view/projects'
-import Sobre from '../sobre'
+import About from '../about'
 
 function Main() {
 
@@ -10,7 +10,7 @@ function Main() {
             <Header />
             <Skills />
             <Projects />
-            <Sobre />
+            <About />
         </>
     )
 }

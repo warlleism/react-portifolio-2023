@@ -45,6 +45,8 @@
         "titulo-6": "UI & WEB DESIGN",
         "desc-6": "User interface design or user interface engineering is the development of computers, applications, machines, mobile communication devices, software and websites with a focus on user experience and interaction.",
         "titulo-7": "TYPESCRIPT",
-        "desc-7": "TypeScript is an open source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language."
+        "desc-7": "TypeScript is an open source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language.",
+        "titulo-8": "NEXTJS",
+        "desc-8": "Next.js is an open source React front-end development web framework created by Vercel that enables functionality such as server-side rendering and static website generation for React-based web applications."
     }
 }
