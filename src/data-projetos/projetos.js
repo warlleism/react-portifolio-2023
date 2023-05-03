@@ -7,6 +7,7 @@ import img6 from '../images/projetos/no-green-bar/last.png'
 import img7 from '../images/projetos/no-green-bar/medical.png'
 import img8 from '../images/projetos/no-green-bar/mobile.png'
 import img9 from '../images/projetos/no-green-bar/flatout.png'
+import img10 from '../images/projetos/no-green-bar/mobile2.png'
 
 const Projetos = [
     {
@@ -54,14 +55,20 @@ const Projetos = [
     {
         id:8,
         img: img8,
-        nome: "React Native",
-        tecno: 'Figma'
+        nome: "Mobile App",
+        tecno: 'React Native'
     },
     {
         id:9,
         img: img9,
         nome: "Web Design",
         tecno: 'Figma'
+    },
+    {
+        id:10,
+        img: img10,
+        nome: "Mobile App",
+        tecno: 'React Native'
     },
 ]
 
