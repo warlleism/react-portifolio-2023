@@ -94,6 +94,18 @@
                 flex-direction: column;
                 transition: .2s ease-in-out;
 
+                .container-green {
+                    width: 91.1%;
+                    height: 100%;
+                    transition: .5s ease-in-out;
+                    background-color: #04d50069;
+                }
+
+
+                .container-green:hover {
+                    opacity: 0;
+                }
+
                 .img-content {
                     width: 100%;
                     display: flex;
@@ -129,42 +141,6 @@
     }
 }
 
-@media screen and (max-width: 912px) {
-    .container-carousel {
-        .container-title-carousel {
-            margin: 0;
-            flex-direction: column;
-            align-items: flex-start;
-
-            .buttom-all-projects {
-                margin-top: 20px;
-            }
-        }
-
-        .carousel {
-            .inner {
-                .item {
-                    min-width: 100%;
-                    min-height: 100%;
-                    margin-right: 30px;
-
-                    .container-nome-projeto {
-                        margin: 0;
-                        width: 100%;
-                        text-align: center;
-                        justify-content: center;
-                    }
-
-                    .container-nome-tecno {
-                        width: 100%;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 912px) {
     .container-carousel {
@@ -181,15 +157,20 @@
         .carousel {
             .inner {
                 padding: 0;
+
                 .item {
                     min-width: 80%;
                     min-height: 80%;
-                    margin-right: 30px;
+                    margin: 20px 0;
+
+                    .container-green {
+                        display: none;
+                    }
 
                     .container-nome-projeto {
                         margin: 0;
                         width: 100%;
-                        margin: -70px 0 0 0;
+                        margin: 20px 0;
                         text-align: center;
                         justify-content: center;
                     }
@@ -198,6 +179,22 @@
                         width: 100%;
                         text-align: center;
                         justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container-carousel {
+
+        .carousel {
+            .inner {
+                .item {
+                    margin-right: 30px;
+                    .container-nome-projeto {
+                        margin-top: -50px;
                     }
                 }
             }

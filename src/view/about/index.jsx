@@ -117,7 +117,7 @@ const About = () => {
                         <h1>2023</h1>
                         <h2>{t("sobreMim.titulo-8")}</h2>
                     </div>
-                    <div className="description">
+                    <div className="description right-border">
                         <p>{t("sobreMim.desc-8")}</p>
                     </div>
                 </div>
