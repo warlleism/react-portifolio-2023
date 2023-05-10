@@ -4,6 +4,9 @@ import Img3 from '../images/javascript.svg'
 import Img4 from '../images/typescript.svg'
 import Img5 from '../images/react.svg'
 import Img6 from '../images/react.svg'
+import Img7 from '../images/angular.svg'
+import Img8 from '../images/ui.svg'
+import Img9 from '../images/next.svg'
 
 
 function Data(t) {
@@ -50,15 +53,21 @@ function Data(t) {
         },
         {
             id: 7,
-            img: Img6,
+            img: Img9,
             tecno: 'Next.js',
             text: t("skills.nextjs"),
         },
         {
             id: 8,
-            img: Img6,
+            img: Img8,
             tecno: 'UI Design',
             text: t("skills.ui"),
+        },
+        {
+            id: 9,
+            img: Img7,
+            tecno: 'Angular',
+            text: t("skills.angular"),
         },
     ]
 

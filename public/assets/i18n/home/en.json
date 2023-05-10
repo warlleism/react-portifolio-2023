@@ -23,7 +23,8 @@
         "reactjs": "React is a free and open-source front-end JavaScript library for creating component-based user interfaces. It is maintained by Meta and a community of individual developers and companies.",
         "reactnative": "React Native is a Javascript library created by Facebook. It is used to develop apps for Android and iOS systems natively.",
         "nextjs": "Next.js is an open source React front-end development web framework created by Vercel that enables functionality such as server-side rendering and static website generation for React-based web applications.",
-        "ui": "User interface design or mobile user interface engineering is the development of computers, applications, machines, communication devices, software and websites with a focus on user experience and interaction."
+        "ui": "User interface design or mobile user interface engineering is the development of computers, applications, machines, communication devices, software and websites with a focus on user experience and interaction.",
+        "angular": "Angular is an open-source, front-end, TypeScript-based web application platform led by the Angular Team at Google and a community of individuals and businesses. Angular is a complete rewrite of AngularJS, done by the same team that helped it."
 
     },
     "projetos": {

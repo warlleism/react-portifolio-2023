@@ -23,7 +23,8 @@
         "reactjs": "React é uma biblioteca JavaScript front-end gratuita e de código aberto para criar interfaces de usuário baseadas em componentes. É mantido pela Meta e uma comunidade de desenvolvedores e empresas individuais.",
         "reactnative": "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa.",
         "nextjs": "Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.",
-        "ui": "Design de interface de utilizador ou engenharia de interface de utilizador é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência do utilizadores e interação."
+        "ui": "Design de interface de utilizador ou engenharia de interface de utilizador é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência do utilizadores e interação.",
+        "angular": "Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e corporações. Angular é uma reescrita completa do AngularJS, feito pela mesma equipe que o construiu."
     },
     "projetos": {
         "titulo-1": "Últimos",
