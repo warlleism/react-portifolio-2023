@@ -29,29 +29,38 @@
 
               .icons {
                   cursor: pointer;
-                  width: 45px;
-                  height: 45px;
-                  display: flex;
-                  padding: 5px;
                   position: relative;
-                  border-radius: 100%;
                   align-items: center;
                   justify-content: center;
-                  background-color: #04ff00;
 
                   .profile {
-                      z-index: 2;
-                      max-width: 100%;
+                      width: 45px;
+                      height: 45px;
+                      display: flex;
+                      align-items: center;
+                      border-radius: 100%;
+                      justify-content: center;
+                      background-color: #04ff00;
+
+                      img {
+                          z-index: 9;
+                          padding: 5px;
+                          min-width: 0%;
+                      }
                   }
 
                   .contact {
-                      transition: .5s ease-in-out;
+                      top: 0;
+                      width: 45px;
+                      height: 45px;
+                      display: flex;
                       position: absolute;
-                      z-index: 2;
-
+                      border-radius: 100%;
+                      transition: .5s ease-in-out;
+                      background-color: #000000;
                   }
-
               }
+
 
               .switch {
                   z-index: 10;
@@ -448,11 +457,12 @@
       }
   }
 
-  
+
   @media screen and (max-width: 400px) {
       .header {
-        box-sizing: border-box;
-        padding: 20px;
+          box-sizing: border-box;
+          padding: 20px;
+
           .container-header-content {
               .container-text-header {
                   .container-text-content {

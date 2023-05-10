@@ -90,3 +90,30 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 2px;
     background-color: #03c000;
 }
+
+.topArrow {
+    z-index: 3;
+    opacity: 0;
+    right: 30px;
+    width: 60px;
+    bottom: 30px;
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    overflow: hidden;
+    align-self: center;
+    border-radius: 100%;
+    justify-content: center;
+    background-color: #03c000;
+    transition: .5s ease-in-out;
+}
+
+.topArrow>span {
+    color: #fff;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+}

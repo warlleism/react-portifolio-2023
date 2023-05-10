@@ -9,7 +9,6 @@ const About = () => {
     useEffect(() => {
         var altura = window.innerHeight
         window.addEventListener('scroll', () => {
-            console.log(window.scrollY)
             if (altura <= 700) {
                 if (window.scrollY >= 1600) {
                     centerItens()

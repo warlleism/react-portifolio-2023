@@ -3,12 +3,12 @@ import img from '../../images/astronauta.png'
 import icon from '../../images/mouse-icon.png'
 import curriculo from '../../data-projetos/curriculo.pdf'
 import { useTranslation } from 'react-i18next'
-import './style.scss'
 import Navbar from "../../components/mobile/navBar";
 import linkedin from '../../images/linkedin.png'
 import profile from '../../images/profile.png'
 import github from '../../images/github.png'
 import instagram from '../../images/instagram.png'
+import './style.scss'
 
 const Header = () => {
 
@@ -90,7 +90,7 @@ const Header = () => {
                         <span className="linguage" onClick={() => languageChange('pt')}>PT</span>
                         <span className="linguage" onClick={() => languageChange('en')}>EN</span>
                     </div>
-                    <div className="icons" onClick={() => contactIcons()}>
+                    <div className="icons">
                         <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="_blank" className="icon1 contact" id="iconContact">
                             <img src={linkedin} alt="" />
                         </a>
@@ -100,7 +100,9 @@ const Header = () => {
                         <a href="https://www.instagram.com/warlleimartinsdev/" target="_blank" className="icon3 contact" id="iconContact">
                             <img src={instagram} alt="" />
                         </a>
-                        <img src={profile} className="profile contact" alt="" />
+                        <div className="profile" onClick={() => contactIcons()} >
+                            <img src={profile} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

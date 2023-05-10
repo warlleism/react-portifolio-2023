@@ -48,7 +48,6 @@ const Carousel = () => {
                                     id='item'
                                 >
                                     <div className='img-content' style={{ backgroundImage: `url(${itens.img})` }}>
-                                    <div className='container-green'></div>
                                     </div>
                                     <div className='container-nome-projeto'>{itens.nome}</div>
                                     <div className='container-nome-tecno'>{itens.tecno}</div>
