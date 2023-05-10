@@ -38,7 +38,7 @@ function Data(t) {
         {
             id: 5,
             img: Img5,
-            tecno: 'ReactJS',
+            tecno: 'React.JS',
             text: t("skills.reactjs"),
 
         },
@@ -47,6 +47,18 @@ function Data(t) {
             img: Img6,
             tecno: 'React Native',
             text: t("skills.reactnative"),
+        },
+        {
+            id: 7,
+            img: Img6,
+            tecno: 'Next.js',
+            text: t("skills.nextjs"),
+        },
+        {
+            id: 8,
+            img: Img6,
+            tecno: 'UI Design',
+            text: t("skills.ui"),
         },
     ]
 

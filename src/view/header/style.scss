@@ -34,6 +34,7 @@
                   justify-content: center;
 
                   .profile {
+                      z-index: 4;
                       width: 45px;
                       height: 45px;
                       display: flex;
@@ -41,7 +42,6 @@
                       border-radius: 100%;
                       justify-content: center;
                       background-color: #04ff00;
-                      z-index: 4;
 
                       img {
                           z-index: 9;

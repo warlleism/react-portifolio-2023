@@ -106,9 +106,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-
             <Navbar />
-
             <div className="container-header-content">
                 <div className="container-text-header">
                     <div className="container-text-content">
