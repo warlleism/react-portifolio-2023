@@ -10,7 +10,7 @@ function App() {
     setTimeout(() => {
       document.body.style.overflow = "auto";
       spinner.style.display = 'none'
-    }, 4000)
+    }, 2000)
   }, [])
 
   window.addEventListener('scroll', () => {
