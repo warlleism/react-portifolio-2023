@@ -8,8 +8,43 @@ import img7 from '../images/projetos/no-green-bar/medical.png'
 import img8 from '../images/projetos/no-green-bar/mobile.png'
 import img9 from '../images/projetos/no-green-bar/flatout.png'
 import img10 from '../images/projetos/no-green-bar/mobile2.png'
+import img11 from '../images/projetos/no-green-bar/black-culture.png'
+import img12 from '../images/projetos/no-green-bar/restaurant.png'
+import img13 from '../images/projetos/no-green-bar/nike-2023.png'
+import img14 from '../images/projetos/no-green-bar/restaurant-2.png'
+import img15 from '../images/projetos/no-green-bar/pet-shop.png'
 
 const Projetos = [
+    {
+        id:11,
+        img: img11,
+        nome: "Mobile App",
+        tecno: 'React Native'
+    },
+    {
+        id:12,
+        img: img12,
+        nome: "Mobile App",
+        tecno: 'React Native'
+    },
+    {
+        id:13,
+        img: img13,
+        nome: "Mobile App",
+        tecno: 'React Native'
+    },
+    {
+        id:14,
+        img: img14,
+        nome: "Mobile App",
+        tecno: 'React Native'
+    },
+    {
+        id:15,
+        img: img15,
+        nome: "Mobile App",
+        tecno: 'React Native'
+    },
     {
         id: 1,
         img: img1,
@@ -70,6 +105,7 @@ const Projetos = [
         nome: "Mobile App",
         tecno: 'React Native'
     },
+  
 ]
 
 export default Projetos;

@@ -110,9 +110,9 @@ const Header = () => {
             <div className="container-header-content">
                 <div className="container-text-header">
                     <div className="container-text-content">
-                        <div id="transform-item" className="text"><strong style={{ color: "#03d500", fontWeight: 900 }}>{t("header.text1-1")}</strong>{t("header.text1-2")}<div className="circle" style={{ background: "#03d500" }}></div></div>
-                        <div id="transform-item" className="text">{t("header.text2-1")}<strong style={{ color: "#03d500", fontWeight: 900 }}>{t("header.text2-2")}</strong> <div className="circle"></div></div>
-                        <div id="transform-item" className="text"><strong style={{ color: "#03d500", fontWeight: 900 }}>{t("header.text3-1")}</strong>{t("header.text3-2")}<div className="circle" style={{ background: "#03d500" }}></div></div>
+                        <div id="transform-item" className="text"><strong style={{ color: "#03d500", fontWeight: 900 }}>{t("header.text1-1")}</strong>{t("header.text1-2")}</div>
+                        <div id="transform-item" className="text">{t("header.text2-1")}<strong style={{ color: "#03d500", fontWeight: 900 }}>{t("header.text2-2")}</strong></div>
+                        <div id="transform-item" className="text"><strong style={{ color: "#03d500", fontWeight: 900 }}>{t("header.text3-1")}</strong>{t("header.text3-2")}</div>
                         <div id="transform-item" className="how-i-do">
                             {t("header.oque-faco")}
                         </div>

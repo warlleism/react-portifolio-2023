@@ -191,13 +191,6 @@
                       transform: translateX(-300%);
                       transition: .5s ease-in-out;
 
-                      .circle {
-                          width: 20px;
-                          height: 20px;
-                          margin-top: 24px;
-                          border-radius: 100%;
-                          background-color: #fff;
-                      }
                   }
 
               }
@@ -231,7 +224,7 @@
                       max-width: 470px;
                       position: relative;
                       transform: rotate(0.2turn);
-                      animation: astro 5s infinite;
+                      animation: astro 9s linear 0s infinite forwards;
                   }
 
                   @keyframes astro {
@@ -241,7 +234,7 @@
                       }
 
                       50% {
-                          left: 20px;
+                          left: 120px;
 
                       }
 
@@ -464,6 +457,10 @@
       .header {
           box-sizing: border-box;
           padding: 20px;
+
+          .buttom{
+            border-radius: 5px;
+          }
 
           .container-header-content {
               .container-text-header {

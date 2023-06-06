@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
-import "./style.scss"
 import { useEffect } from "react";
+import Foto from "../../images/foto.png"
+import "./style.scss"
 
 const About = () => {
 
     const { t } = useTranslation(["home"])
-    
+
     useEffect(() => {
         var altura = window.innerHeight
         window.addEventListener('scroll', () => {
@@ -18,7 +19,7 @@ const About = () => {
             }
         })
     }, [])
-    
+
     function centerItens() {
         const item = document.querySelectorAll('#column')
         item.forEach((item, index) => {

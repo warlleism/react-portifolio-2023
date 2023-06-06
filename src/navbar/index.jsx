@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="nav-bar-default">
                 <Link to={'/'}>Início</Link>
             </div>
-            <a href={curriculo} className="buttom" style={{ fontWeight: "600" }}>
+            <a href={curriculo} className="buttom">
                 Currículo
             </a>
         </div>
