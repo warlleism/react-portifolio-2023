@@ -18,32 +18,32 @@ const Projetos = [
     {
         id:11,
         img: img11,
-        nome: "Mobile App",
-        tecno: 'React Native'
+        nome: "Web App",
+        tecno: 'React js'
     },
     {
         id:12,
         img: img12,
-        nome: "Mobile App",
-        tecno: 'React Native'
+        nome: "Web App",
+        tecno: 'React js'
     },
     {
         id:13,
         img: img13,
-        nome: "Mobile App",
-        tecno: 'React Native'
+        nome: "Web App",
+        tecno: 'React js'
     },
     {
         id:14,
         img: img14,
-        nome: "Mobile App",
-        tecno: 'React Native'
+        nome: "Web App",
+        tecno: 'React js'
     },
     {
         id:15,
         img: img15,
-        nome: "Mobile App",
-        tecno: 'React Native'
+        nome: "Web App",
+        tecno: 'React js'
     },
     {
         id: 1,
@@ -55,25 +55,25 @@ const Projetos = [
         id: 2,
         img: img2,
         nome: "Web Design",
-        tecno: 'React JSX'
+        tecno: 'React js'
     },
     {
         id: 3,
         img: img3,
         nome: "Front-end app",
-        tecno: 'React JSX'
+        tecno: 'React js'
     },
     {
         id: 4,
         img: img4,
         nome: "Front-end app",
-        tecno: 'React JSX'
+        tecno: 'React js'
     },
     {
         id: 5,
         img: img5,
         nome: "Front-end app",
-        tecno: 'React TSX'
+        tecno: 'React ts'
     },
     {
         id: 6,

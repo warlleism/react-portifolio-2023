@@ -21,9 +21,54 @@ import img_20 from '../images/projetos/no-green-bar/ford.png'
 import img_21 from '../images/projetos/no-green-bar/ford2.png'
 import img_22 from '../images/projetos/no-green-bar/pizza.png'
 import img_23 from '../images/projetos/no-green-bar/pizza2.png'
+import img_24 from '../images/projetos/no-green-bar/black-culture.png'
+import img_25 from '../images/projetos/no-green-bar/restaurant.png'
+import img_26 from '../images/projetos/no-green-bar/nike-2023.png'
+import img_27 from '../images/projetos/no-green-bar/restaurant-2.png'
+import img_28 from '../images/projetos/no-green-bar/pet-shop.png'
 
 const Projetos = [
 
+    {
+        id: 12,
+        img: img_24,
+        nome: "Front end app",
+        text: "Web Site",
+        tecno: 'NextJs',
+        color: "#2A2A2A"
+    },
+    {
+        id: 13,
+        img: img_25,
+        nome: "Front end app",
+        text: "Web Site",
+        tecno: 'NextJs',
+        color: "#FF3600"
+    },
+    {
+        id: 14,
+        img: img_26,
+        nome: "Front end app",
+        text: "Web Site",
+        tecno: 'NextJs',
+        color: "#FF0078"
+    },
+    {
+        id: 15,
+        img: img_27,
+        nome: "Front end app",
+        text: "Web Site",
+        tecno: 'NextJs',
+        color: "#FF4200"
+    },
+    {
+        id: 16,
+        img: img_28,
+        nome: "Front end app",
+        text: "Web Site",
+        tecno: 'NextJs',
+        color: "orange"
+    },
     {
         id: 0,
         img: img_22,

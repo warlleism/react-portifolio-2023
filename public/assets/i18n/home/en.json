@@ -28,6 +28,8 @@
 
     },
     "projetos": {
+        "pro": "Pro",
+        "jetos": "jects",
         "titulo-1": "Latest",
         "titulo-2": "Projects",
         "ver-todos": "See all"

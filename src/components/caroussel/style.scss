@@ -1,191 +1,186 @@
 .container-carousel {
-    width: 100%;
-    height: 700px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+  .container-title-carousel {
+    width: 81%;
     display: flex;
-    overflow: hidden;
-    position: relative;
+    margin: 100px auto;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
 
-    .container-title-carousel {
-        width: 81%;
+    .buttom-all-projects {
+      width: 120px;
+      height: 50px;
+      display: flex;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.3rem;
+      border-radius: 5px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s ease-in-out;
+      border: solid 2px #03d500;
+    }
+
+    .buttom-all-projects:hover {
+      color: #09071a;
+      background-color: #03d500;
+      border: solid 2px #09071a;
+    }
+
+    .container-title-text {
+      .titulo-txt {
+        letter-spacing: 4px;
+        font-size: 1.9rem;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 0.87);
+      }
+
+      div:nth-child(2) {
+        height: 2px;
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+        background-color: #03d500;
+      }
+
+      div:nth-child(2)::after {
+        content: "";
+        width: 10px;
+        right: 20px;
+        height: 100%;
+        position: absolute;
+        background-color: #1a0c07;
+      }
+
+      div:nth-child(2)::before {
+        content: "";
+        width: 10px;
+        right: 40px;
+        height: 100%;
+        position: absolute;
+        background-color: #09071a;
+      }
+    }
+  }
+
+  .carousel {
+    cursor: grab;
+    width: 85%;
+    overflow: hidden;
+
+    .inner {
+      display: flex;
+
+      .item {
         display: flex;
-        margin: 100px auto;
+        color: black;
+        min-width: 620px;
+        min-height: 580px;
+        position: relative;
+        overflow: hidden;
         align-items: center;
-        justify-content: space-between;
+        margin-bottom: 100px;
+        flex-direction: column;
+        transition: 0.2s ease-in-out;
 
-        .buttom-all-projects {
-            width: 120px;
-            height: 50px;
-            display: flex;
-            color: #fff;
-            cursor: pointer;
-            font-size: 1.3rem;
-            border-radius: 5px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            transition: .5s ease-in-out;
-            border: solid 2px #03d500;
+        .img-content {
+          width: 100%;
+          display: flex;
+          object-fit: fill;
+          min-height: 300px;
+          align-items: center;
+          justify-content: center;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
         }
 
-        .buttom-all-projects:hover {
-            color: #09071A;
-            background-color: #03d500;
-            border: solid 2px #09071A;
+        .container-nome-projeto {
+          width: 90%;
+          display: flex;
+          margin: 10px 0;
+          color: #03d500;
+          font-size: 1.5rem;
+          transition: 0.5s ease-in-out;
         }
 
-        .container-title-text {
-            .titulo-txt {
-                letter-spacing: 4px;
-                font-size: 1.9rem;
-                font-weight: 200;
-                color: rgba(255, 255, 255, 0.87);
-            }
-
-            div:nth-child(2) {
-                height: 2px;
-                width: 100%;
-                margin-top: 10px;
-                position: relative;
-                background-color: #03d500;
-            }
-
-            div:nth-child(2)::after {
-                content: '';
-                width: 10px;
-                right: 20px;
-                height: 100%;
-                position: absolute;
-                background-color: #1a0c07;
-            }
-
-            div:nth-child(2)::before {
-                content: '';
-                width: 10px;
-                right: 40px;
-                height: 100%;
-                position: absolute;
-                background-color: #09071A;
-            }
+        .container-nome-tecno {
+          width: 90%;
+          display: flex;
+          color: #fff;
+          font-size: 1.2rem;
+          transition: 0.5s ease-in-out;
         }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 912px) {
+  .container-carousel {
+    .container-title-carousel {
+      margin: 0;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .buttom-all-projects {
+        margin-top: 20px;
+      }
     }
 
     .carousel {
-        cursor: grab;
-        width: 85%;
-        overflow: hidden;
+      .inner {
+        padding: 0;
 
-        .inner {
-            display: flex;
+        .item {
+          min-width: 80%;
+          min-height: 80%;
+          margin: 20px 0;
 
-            .item {
-                display: flex;
-                color: black;
-                min-width: 620px;
-                min-height: 580px;
-                position: relative;
-                overflow: hidden;
-                align-items: center;
-                margin-bottom: 100px;
-                flex-direction: column;
-                transition: .2s ease-in-out;
+          .container-green {
+            display: none;
+          }
 
-                .img-content {
-                    width: 100%;
-                    display: flex;
-                    object-fit: fill;
-                    min-height: 300px;
-                    align-items: center;
-                    justify-content: center;
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-
-                }
-
-                .container-nome-projeto {
-                    width: 90%;
-                    display: flex;
-                    margin: 10px 0;
-                    color: #03d500;
-                    font-size: 1.5rem;
-                    transition: .5s ease-in-out;
-                }
-
-                .container-nome-tecno {
-                    width: 90%;
-                    display: flex;
-                    color: #fff;
-                    font-size: 1.2rem;
-                    transition: .5s ease-in-out;
-                }
-
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 912px) {
-    .container-carousel {
-        .container-title-carousel {
+          .container-nome-projeto {
             margin: 0;
-            flex-direction: column;
-            align-items: flex-start;
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+            justify-content: center;
+          }
 
-            .buttom-all-projects {
-                margin-top: 20px;
-            }
+          .container-nome-tecno {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+          }
         }
-
-        .carousel {
-            .inner {
-                padding: 0;
-
-                .item {
-                    min-width: 80%;
-                    min-height: 80%;
-                    margin: 20px 0;
-
-                    .container-green {
-                        display: none;
-                    }
-
-                    .container-nome-projeto {
-                        margin: 0;
-                        width: 100%;
-                        margin: 20px 0;
-                        text-align: center;
-                        justify-content: center;
-                    }
-
-                    .container-nome-tecno {
-                        width: 100%;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 414px) {
-    .container-carousel {
-
-        .carousel {
-            .inner {
-                .item {
-                    margin-right: 30px;
-                    .container-nome-projeto {
-                        margin-top: -50px;
-                    }
-                }
-            }
+  .container-carousel {
+    .carousel {
+      .inner {
+        .item {
+          margin-right: 30px;
+          .container-nome-projeto {
+            margin-top: -50px;
+          }
         }
+      }
     }
+  }
 }
